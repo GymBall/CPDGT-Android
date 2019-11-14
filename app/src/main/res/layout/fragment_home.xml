@@ -17,14 +17,15 @@
             android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:src="@drawable/logo_blue" />
 
         <ImageView
             android:id="@+id/gt_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
             android:src="@drawable/gt_mode" />
     </RelativeLayout>
     <LinearLayout
@@ -64,10 +65,20 @@
             android:fontFamily="@font/nanumsquare_light"
             android:text="열심히 운동 중!"/>
     </LinearLayout>
-    <Gallery
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/home_gallery"/>
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/home_image2"/>
+    </RelativeLayout>
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_gallery"/>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -153,5 +164,4 @@
         </LinearLayout>
     </LinearLayout>
 
-
-</>
+</LinearLayout>
