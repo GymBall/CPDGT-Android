@@ -10,21 +10,174 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp">
+
         <View
             android:layout_width="100dp"
             android:layout_height="8dp"
-            android:background="#d6eeff"
-            android:layout_alignBottom="@id/text">
-        </View>
+            android:layout_alignBottom="@id/text"
+            android:background="#d6eeff"></View>
+
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="어떤 강의를 찾으시나요?"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/nanumsquare_regular"
+            android:text="어떤 강의를 찾으시나요?"
             android:textColor="#151515"
-            android:textSize="25sp"
-            android:layout_marginTop="70dp"/>
+            android:textSize="25sp" />
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29.3dp">
+
+        <EditText
+            android:layout_width="314.5dp"
+            android:layout_height="28.3dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_search"
+            android:id="@+id/search_view"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_alignLeft="@id/search_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.3dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="78dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="21.8dp"
+            android:layout_marginLeft="31dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_regular"
+                android:textColor="#2c77f1"
+                android:textSize="15sp"
+                android:id="@+id/keyword_sharp"
+                android:text="#_"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp"
+                android:layout_alignRight="@id/keyword_sharp"
+                android:text="인기 검색 키워드"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="33dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#농구"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#주짓수"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#수영"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#태권도"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="33dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#새벽반"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#오전반"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#경력3년이상"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="33dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#일대일"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_keyword"
+                android:textSize="12.5sp"
+                android:textColor="#0d0d0d"
+                android:fontFamily="@font/nanumsquare_light"
+                android:layout_margin="4dp"
+                android:text="#10명이상"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
