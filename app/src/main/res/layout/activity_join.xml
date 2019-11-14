@@ -1,9 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="740dp"
+    android:orientation="vertical"
     tools:context=".ui.join.JoinActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="60dp"
+            android:lineSpacingExtra="2sp"
+            android:textColor="#404040"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="13.8sp"
+            tools:text="짐선생 회원가입" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="9.9dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginHorizontal="33.2dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47.6dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/id"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:layout_marginTop="5.2dp"
+            android:background="@drawable/invalid_" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/password"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:layout_marginTop="5.2dp"
+            android:background="@drawable/invalid_" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/name" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:layout_marginTop="5.2dp"
+            android:background="@drawable/invalid_" />
+
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="#0e0e0e"
+        android:lineSpacingExtra="2sp"
+        android:src="@drawable/number" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:layout_marginTop="5.2dp"
+            android:background="@drawable/invalid_" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/birth" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:layout_marginTop="5.2dp"
+            android:background="@drawable/invalid_" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/sex"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26.2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="137.2dp"
+                android:layout_height="26.2dp"
+                android:background="#f0f5fc"
+                android:textAlignment="center"
+                android:text="여"/>
+            <TextView
+                android:layout_width="137.2dp"
+                android:layout_height="26.2dp"
+                android:background="#f0f5fc"
+                android:textAlignment="center"
+                android:layout_marginLeft="20.2dp"
+                android:text="남"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#0e0e0e"
+            android:lineSpacingExtra="2sp"
+            android:src="@drawable/select"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:text="요가"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="헬스"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="발레"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="수영"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:text="댄스"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="복싱"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="태권도"/>
+                <TextView
+                    android:layout_width="68.8dp"
+                    android:layout_height="26.2dp"
+                    android:background="#f0f5fc"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="6.2dp"
+                    android:text="기타"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:orientation="vertical"
+        android:background="#2c77f1">
+
+        <TextView
+            android:layout_width="36.2dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="2.5sp"
+            android:textColor="#ffffff"
+            android:textSize="17.5sp"
+            tools:text="다 음" />
+
+    </LinearLayout>
+</LinearLayout>
