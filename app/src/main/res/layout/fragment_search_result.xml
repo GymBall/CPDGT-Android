@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:layout_marginTop="10.4dp"
-        android:background="#0d0d0d"/>
+        android:background="#d5d5d5"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,5 +47,14 @@
         android:fontFamily="@font/nanumsquare_regular"
         android:layout_marginTop="8.9dp"
         android:layout_marginLeft="15.8dp"
+        android:layout_marginBottom="23dp"
         android:text="23건"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_result_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 </LinearLayout>

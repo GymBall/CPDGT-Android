@@ -7,6 +7,7 @@ import org.gymball.cpdgt_android.ui.home.HomeFragment
 import org.gymball.cpdgt_android.ui.lecture.LectureFragment
 import org.gymball.cpdgt_android.ui.my.MyFragment
 import org.gymball.cpdgt_android.ui.search.SearchFragment
+import org.gymball.cpdgt_android.ui.search.SearchResultFragment
 
 class MainTabFragmentStatePagerAdapter (fm: FragmentManager, private val fragmentCount: Int) : FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {

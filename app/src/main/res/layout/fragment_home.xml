@@ -69,8 +69,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:layout_marginBottom="55dp">
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home_image"
@@ -161,12 +161,13 @@
                     android:layout_marginLeft="12.5dp"
                     android:layout_marginRight="12.5dp"
                     android:id="@+id/etc_btn"/>
+
                 <ImageButton
+                    android:id="@+id/whole_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_whole"
                     android:background="@android:color/transparent"
-                    android:id="@+id/whole_btn"/>
+                    android:src="@drawable/home_whole" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
