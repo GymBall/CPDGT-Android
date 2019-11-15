@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f7ff"
+    tools:context=".ui.home.HomeDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/adv"
+        android:background="#fafcff">
+        <TextView
+            android:text="POWER "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_light"
+            android:textSize="15sp"
+            android:layout_marginLeft="22.8dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#c40000"
+            android:id="@+id/power_txt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 짐선생"
+            android:fontFamily="@font/nanumsquare_light"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/power_txt"
+            android:textColor="#383838"/>
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/power_txt"
+            android:layout_marginHorizontal="16dp"
+            android:background="#ffffff">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_adv_class_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adv"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+
+        android:background="#fafcff">
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="#ffffff">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_class_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

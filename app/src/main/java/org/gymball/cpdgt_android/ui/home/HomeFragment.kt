@@ -13,7 +13,10 @@ import androidx.recyclerview.widget.SnapHelper
 import kotlinx.android.synthetic.main.fragment_home.*
 import androidx.recyclerview.widget.PagerSnapHelper
 import android.R
-
+import android.content.Intent
+import android.widget.ImageButton
+import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 
 
 class HomeFragment : Fragment() {
@@ -21,8 +24,11 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-
         return inflater.inflate(org.gymball.cpdgt_android.R.layout.fragment_home, container, false)
+
+        whole_btn.setOnClickListener(object : View.OnClickListener{ override fun onClick(v: View?){
+            }
+        })
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -45,5 +51,7 @@ class HomeFragment : Fragment() {
         snapHelper.attachToRecyclerView(rv_home_image)
         rv_home_image.addItemDecoration(LinePagerIndicatorDecoration())
     }
+
+
 
 }
