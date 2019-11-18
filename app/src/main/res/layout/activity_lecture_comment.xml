@@ -59,7 +59,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_toRightOf="@id/iv_act_lecture_comment_profile"
-                android:layout_marginLeft="7dp">
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -18,7 +18,10 @@ import org.jetbrains.anko.support.v4.startActivity
 class LectureFragment : Fragment() {
 
     lateinit var lectureRecyclerViewAdapter: LectureRecyclerViewAdapter
-    var dataList: ArrayList<LectureListData> = arrayListOf(LectureListData(R.drawable.lecture1),LectureListData(R.drawable.lecture1),LectureListData(R.drawable.lecture1))
+    var dataList: ArrayList<LectureListData> = arrayListOf(
+        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뫄뫄", "_언제부터 수강 시작", "_몇일째 Gym "),
+        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"묘묘","_언제부터 수강 시작", "_몇일째 Gym "),
+        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뮤뮤","_언제부터 수강 시작", "_몇일째 Gym "))
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_lecture, container, false)
