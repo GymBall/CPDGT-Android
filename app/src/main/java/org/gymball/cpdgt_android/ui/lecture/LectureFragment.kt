@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.fragment_lecture.view.*
 
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.model.LectureListData
+import org.jetbrains.anko.support.v4.startActivity
 
 class LectureFragment : Fragment() {
 
@@ -27,17 +28,25 @@ class LectureFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         setRecyclerView()
         setView()
-        val snapHelper : LinearSnapHelper = LinearSnapHelper()
+        setOnClickListener()
+        val snapHelper = LinearSnapHelper()
         snapHelper.attachToRecyclerView(rv_frag_lecture_lecture_list)
     }
 
     private fun setView() {
         tv_frag_lecture_lec_num.text = dataList.size.toString()
     }
+
     private fun setRecyclerView() {
         lectureRecyclerViewAdapter = LectureRecyclerViewAdapter(activity!!, dataList, dataList.size)
         rv_frag_lecture_lecture_list.adapter = lectureRecyclerViewAdapter
         rv_frag_lecture_lecture_list.layoutManager = LinearLayoutManager(activity!!, LinearLayoutManager.HORIZONTAL, false)
         indicator_frag_lecture.attachToRecyclerView(rv_frag_lecture_lecture_list)
+    }
+
+    private fun setOnClickListener() {
+        btn_frag_lecture_write_comment.setOnClickListener {
+            startActivity<LectureCommentActivity>()
+        }
     }
 }
