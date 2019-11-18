@@ -45,5 +45,5 @@ dependencies {
     //indicator
     implementation 'com.ryanjeffreybrooks:indefinitepagerindicator:1.0.10'
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
-
+    implementation 'ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.0.6'
 }
