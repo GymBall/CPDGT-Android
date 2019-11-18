@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10.1dp"
+        android:textSize="15.8sp"
+        android:textColor="#404040"
+        android:lineSpacingExtra="2sp"
+        tools:text="소개 수정"
+        />
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.3dp"
+            android:layout_marginTop="9.4dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#397ff2"
+            android:lineSpacingExtra="2.5sp"
+            tools:text="태권도 초급반"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17.4dp"
+            android:layout_marginLeft="8.8dp"
+            android:lineSpacingExtra="1.8sp"
+
+            android:textColor="#151515"
+            android:textSize="12.5sp"
+            tools:text="화, 목 오후 8시" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="667dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22.3dp"
+            android:background="@drawable/blue_circle_fill" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop = "17.8dp"
+            android:textStyle="bold"
+            android:textSize="13.8sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2sp"
+            tools:text="수업 소개"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="386dp"
+        android:layout_height="62.5dp"
+        android:layout_marginLeft="12.8dp"
+        android:layout_marginTop="4.5dp"
+        android:background="@drawable/white_border_fill">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18.5dp"
+            android:background="@drawable/blue_circle_fill" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop = "12.8dp"
+            android:textStyle="bold"
+            android:textSize="13.8sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2sp"
+            tools:text="한마디"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginLeft="12.8dp"
+        android:layout_width="386dp"
+        android:layout_height="62.5dp"
+        android:layout_marginTop="4.5dp"
+        android:background="@drawable/white_border_fill" />
+
+    <view
+        android:layout_width="386dp"
+        android:layout_height="1dp"
+        android:background="#C2C2D4"
+        android:layout_marginTop="25.4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/blue_circle_fill" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop = "12.8dp"
+            android:textStyle="bold"
+            android:textSize="13.8sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2sp"
+            tools:text="강사 경력"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginLeft="12.8dp"
+        android:layout_width="386dp"
+        android:layout_height="99.5dp"
+        android:layout_marginTop="4.5dp"
+        android:background="@drawable/white_border_fill" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="29.3dp"
+            android:background="@drawable/blue_circle_fill" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop = "22.5dp"
+            android:textStyle="bold"
+            android:textSize="13.8sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2sp"
+            tools:text="강사 소개"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginLeft="12.8dp"
+        android:layout_marginTop="4.5dp"
+        android:layout_width="386dp"
+        android:layout_height="99.5dp"
+        android:background="@drawable/white_border_fill" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48.5dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_rectangle_fill"
+        android:text="완료" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="272.8dp"
+        android:layout_height="202.5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2sp"
+                android:textColor="#4a4a4a"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="태권도 초급반 - 화, 목 오후 8시" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2sp"
+                android:textColor="#4a4a4a"
+                android:textSize="15sp"
+                tools:text="모집을 마감하시겠습니까?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center">
+
+
+            <Button
+                android:layout_width="107.5dp"
+                android:layout_height="40.3dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/blue_rectangle_fill"
+                tools:text="예" />
+
+            <Button
+                android:layout_width="107.5dp"
+                android:layout_height="40.3dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/blue_rectangle_fill"
+                tools:text="아니오" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
