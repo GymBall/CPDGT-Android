@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:descendantFocusability="blocksDescendants"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="60dp"
             android:paddingLeft="40dp"
             android:clipToPadding="false"
             android:paddingRight="40dp">
@@ -112,7 +112,7 @@
         app:spi_dotSelectedSize="12dp"
         app:spi_dotSize="8dp"
         app:spi_dotSpacing="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/sv_top"
         />
 </RelativeLayout>
