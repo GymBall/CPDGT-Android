@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.lecturedetail.LectureDetailClassFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#_"
+            android:textSize="17sp"
+            android:textColor="#2c77f1"
+            android:fontFamily="@font/nanumsquare_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수업 소개"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanumsquare_bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="@font/nanumsquare_regular"
+        android:textColor="#404040"
+        android:lineSpacingExtra="7sp"
+        android:text="태권도 초급반은 태권도를 처음 접하시는 분들과
+\n태권도를 막 시작하여 기초적인 지도가 필요한 분들을
+\n위한 수업입니다. 현재 중급반, 고급반 역시 모집 중이니
+\n문의 주시면 적절한 반으로 신청 할 수 있도록
+\n도와드리겠습니다 ^^"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#_"
+            android:textSize="17sp"
+            android:textColor="#2c77f1"
+            android:fontFamily="@font/nanumsquare_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한마디"
+           android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanumsquare_bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="7sp"
+        android:fontFamily="@font/nanumsquare_regular"
+        android:textColor="#404040"
+        android:text="&quot;눈높이 교육으로 배워가는 태권도!\n
+이 수업과 함께라면 당신도 태권도 고수 &quot;"/>
+
+</LinearLayout>
