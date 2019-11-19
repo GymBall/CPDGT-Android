@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="9.8dp"
+    android:layout_width="100.5dp"
+    android:layout_height="157.5dp"
+    android:background="@drawable/white_radius_fill_shadow">
+    <ImageView
+        android:id="@+id/recentGTImage"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginVertical="11dp"
+        android:src="@drawable/recentGT" />
+    <TextView
+        android:id="@+id/recentGTname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7.5sp"
+        android:textColor="#4d4c4c"
+        android:letterSpacing="-0.08"
+        android:lineSpacingExtra="1.3sp"
+        tools:text="이대훈 짐선생"/>
+    <TextView
+        android:id="@+id/recentGTCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12.5sp"
+        android:textColor="#000000"
+        android:letterSpacing="-0.08"
+        android:lineSpacingExtra="1.8sp"
+        tools:text="태권도 초급반"/>
+    <TextView
+        android:id="@+id/recentGTtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11.3sp"
+        android:textColor="#000000"
+        android:letterSpacing="-0.08"
+        android:lineSpacingExtra="1.3sp"
+        tools:text="화, 목 오후 8시"
+        />
+</LinearLayout>
