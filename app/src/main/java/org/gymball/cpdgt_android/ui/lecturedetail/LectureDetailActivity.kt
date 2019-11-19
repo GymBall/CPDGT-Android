@@ -13,6 +13,7 @@ import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_lecture_detail.*
 import kotlinx.android.synthetic.main.tab_lecture_detail_activity.*
 import org.gymball.cpdgt_android.R
+import org.jetbrains.anko.startActivity
 
 class LectureDetailActivity : AppCompatActivity() {
 
@@ -23,6 +24,7 @@ class LectureDetailActivity : AppCompatActivity() {
         setStatusBarTransparent()
 
         viewInit()
+        setOnClickListener()
     }
 
     class LectureClass{
@@ -92,6 +94,15 @@ class LectureDetailActivity : AppCompatActivity() {
             tv_tl_lecture_detail_class.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_regular.ttf")
             tv_tl_lecture_detail_teacher.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_bold.ttf")
 
+        }
+    }
+
+    private fun setOnClickListener() {
+        btn_act_lecture_detail_back.setOnClickListener {
+            finish()
+        }
+        btn_act_lecture_detail_inquire.setOnClickListener {
+            startActivity<ChatActivity>()
         }
     }
 }

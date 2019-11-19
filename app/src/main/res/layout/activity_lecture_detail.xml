@@ -93,16 +93,22 @@
             app:tabIndicatorColor="@color/colorAccent"
             app:tabIndicatorHeight="3dp"
             app:tabBackground="@null"
+            android:background="@color/colorWhite"
             app:tabRippleColor="@color/transparent"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             app:tabIndicatorFullWidth="false"/>
+        <View
+            android:layout_width="210dp"
+            android:layout_height="0.2dp"
+            android:background="#c2c2d4"
+            android:layout_marginLeft="30dp"/>
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/vp_act_lecture_detail_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
     </LinearLayout>
     <RelativeLayout
         android:layout_width="90dp"
@@ -115,7 +121,6 @@
             android:layout_height="90dp"
             android:scaleType="centerCrop"
             android:src="@drawable/lecture_comment_teacher"/>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -137,4 +142,12 @@
             android:layout_centerInParent="true">
         </TextView>
     </RelativeLayout>
+    <ImageView
+        android:id="@+id/btn_act_lecture_detail_back"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow_left_white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"/>
 </RelativeLayout>
