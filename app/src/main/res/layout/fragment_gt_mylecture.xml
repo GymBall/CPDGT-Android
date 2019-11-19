@@ -38,15 +38,16 @@
         android:layout_height="wrap_content"
         tools:context=".ui.MainActivity">
 
-        <android.support.v7.widget.recyclerview
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingBottom="40dp"
+            android:layout_marginLeft="45dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/rv_gt_mylecture"
-            android:paddingBottom="40dp">
+            tools:listitem="@layout/rv_gt_mylecture">
 
-        </android.support.v7.widget.recyclerview>
+        </androidx.recyclerview.widget.RecyclerView>
 
         <Button
             android:id="@+id/button"

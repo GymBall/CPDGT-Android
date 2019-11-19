@@ -10,12 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_gt_mylecture.*
 import org.gymball.cpdgt_android.R
-import org.gymball.cpdgt_android.ui.gtlecture.LecRvAdapter
-import org.gymball.cpdgt_android.ui.gtlecture.Lecture
 
 class MainActivity : AppCompatActivity() {
 
-    var LectureList = arrayListOf<Lecture>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,13 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.fragment_gt_mylecture)
 
         viewInit()
-        val mAdapter = LecRvAdapter(this, LectureList)
-
-        recycler_view.adapter = mAdapter
-
-        val lm = LinearLayoutManager(this)
-        recycler_view.layoutManager = lm
-        recycler_view.setHasFixedSize(true)
 
 
     }
