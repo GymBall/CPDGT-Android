@@ -11,7 +11,7 @@
         android:layout_width="79dp"
         android:layout_height="79dp"
         android:layout_marginVertical="11dp"
-        android:src="@drawable/recentGT" />
+        android:src="@drawable/recentgt" />
     <TextView
         android:id="@+id/recentGTname"
         android:layout_width="wrap_content"

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_tab_main_act_home"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/iv_tl_main_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_bottom_tab_home"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_tab_main_act_search"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/iv_tl_main_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_bottom_tab_search"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_tab_main_act_lecture"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/iv_tl_main_lecture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_bottom_tab_lecture"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_tab_main_act_my"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/iv_tl_main_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_bottom_tab_my"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+</LinearLayout>

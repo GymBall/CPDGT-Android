@@ -50,7 +50,7 @@
             android:paddingLeft="12dp"
             android:textSize="15dp"
             android:layout_gravity="center"
-            android:background="@drawable/IdPassword"
+            android:background="@drawable/idpassword"
             android:hint="아이디"/>
         <EditText
             android:id="@+id/editPassword"
@@ -59,7 +59,7 @@
             android:paddingLeft="12dp"
             android:textSize="15dp"
             android:layout_gravity="center"
-            android:background="@drawable/IdPassword"
+            android:background="@drawable/idpassword"
             android:hint="비밀번호"/>
         <Button
             android:id="@+id/loginButton"
@@ -67,7 +67,7 @@
             android:layout_height="32.3dp"
             android:layout_marginTop="57.3dp"
             android:layout_gravity="center"
-            android:background="@drawable/loginButton"/>
+            android:background="@drawable/loginbutton"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,14 +80,14 @@
                 android:layout_height="14dp"
                 android:layout_marginHorizontal="45dp"
                 android:layout_gravity="center"
-                android:background="@drawable/GTjoin"/>
+                android:background="@drawable/gtjoin"/>
             <Button
                 android:id="@+id/GSJoinButton"
                 android:layout_width="100dp"
                 android:layout_height="14dp"
                 android:layout_marginHorizontal="45dp"
                 android:layout_gravity="center"
-                android:background="@drawable/GSjoin"/>
+                android:background="@drawable/gsjoin"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
