@@ -43,6 +43,10 @@ class HomeFragment : Fragment() {
 
     private fun setOnClickListener(){
         whole_btn.setOnClickListener{
+            /*
+            val fragment = HomeDetailWhole()
+            val fragmentManager = activity!!.supportFragmentManager.beginTransaction().replace(
+                org.gymball.cpdgt_android.R.id.vp_main_act_pager, fragment).commit()*/
             (activity as MainActivity).replaceFragment(HomeDetailWhole())
         }
     }

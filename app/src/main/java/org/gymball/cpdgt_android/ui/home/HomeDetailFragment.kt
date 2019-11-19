@@ -40,17 +40,11 @@ class HomeDetailFragment : Fragment() {
     }
 
     private fun configureTopNavigation(){
-        vp_home_detail.adapter = HomeDetailPagerAdapter(childFragmentManager, 5)
+        vp_home_detail.adapter = HomeDetailPagerAdapter(childFragmentManager, 9)
 
-        vp_home_detail.offscreenPageLimit = 5
+        vp_home_detail.offscreenPageLimit = 9
         tl_home_detail_bar.setupWithViewPager(vp_home_detail)
-/*
-        val topNaviLayout : View = this.layoutInflater.inflate(R.layout.home_detail_navigation_tab, null, false)
-        tl_home_detail_bar.getTabAt(0)!!.customView = topNaviLayout.findViewById(R.id.btn_whole)
-        tl_home_detail_bar.getTabAt(1)!!.customView = topNaviLayout.findViewById(R.id.btn_yoga)
-        tl_home_detail_bar.getTabAt(2)!!.customView = topNaviLayout.findViewById(R.id.btn_ballet)
-        tl_home_detail_bar.getTabAt(3)!!.customView = topNaviLayout.findViewById(R.id.btn_tak)
-        */
+
     }
 
 
