@@ -22,6 +22,7 @@
         app:tabRippleColor="@color/transparent" />
 
     <View
+        android:id="@+id/divline"
         android:layout_width="match_parent"
         android:layout_height="0.2dp"
         android:layout_marginTop="10dp"
@@ -30,8 +31,7 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_act_gtmode_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp" />
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

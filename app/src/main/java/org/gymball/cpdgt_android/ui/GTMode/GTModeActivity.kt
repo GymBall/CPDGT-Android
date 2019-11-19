@@ -19,12 +19,16 @@ class GTModeActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         GTModeClass.act = this@GTModeActivity
         setContentView(R.layout.activity_gtmain)
-        setStatusBarTransparent()
+        //setStatusBarTransparent()
 
         viewInit()
         //setOnClickListener()
     }
-
+    class GTModeClass {
+        companion object{
+            var act: Activity? = null
+        }
+    }
     private fun setWindowFlag(bits: Int, on: Boolean) {
         val win = window
         val winParams = win.attributes
@@ -42,29 +46,12 @@ class GTModeActivity : AppCompatActivity(){
 
     private fun viewInit() {
         vp_act_gtmode_pager.adapter = GTModeTabFragmentStatePagerAdapter(supportFragmentManager, 2)
-
-
         tl_act_gtmode_top_bar.setupWithViewPager(vp_act_gtmode_pager, true)
 
         val tabLayout: View = this.layoutInflater.inflate(R.layout.tab_gtmode, null, false)
         tl_act_gtmode_top_bar.getTabAt(0)!!.customView = tabLayout.findViewById(R.id.btn_tab_gtmode_my)
         tl_act_gtmode_top_bar.getTabAt(1)!!.customView = tabLayout.findViewById(R.id.btn_tab_gtmode_space)
-        tl_act_gtmode_top_bar.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-                selectedGTModeTab(position = tab!!.position)
-            }
 
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                selectedGTModeTab(position = tab!!.position)
-
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                selectedGTModeTab(position = tab!!.position)
-
-            }
-
-        })
     }
 
     private fun setStatusBarTransparent() {
@@ -92,9 +79,5 @@ class GTModeActivity : AppCompatActivity(){
 
         }
     }
-    class GTModeClass {
-    companion object{
-        var act: Activity? = null
-    }
-    }
+
 }
