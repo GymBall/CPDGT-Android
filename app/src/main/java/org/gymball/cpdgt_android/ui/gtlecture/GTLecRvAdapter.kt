@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import org.gymball.cpdgt_android.R
 
-class GTLecRvAdapter (val ctx: Context, val LectureList: ArrayList<GTLecture>, var total: Int):
+class GTLecRvAdapter (val ctx: Context, var LectureList: ArrayList<GTLecture>, var total: Int):
         RecyclerView.Adapter<GTLecRvAdapter.Holder>(){
 
 

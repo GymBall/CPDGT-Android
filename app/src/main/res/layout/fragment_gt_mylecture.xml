@@ -15,7 +15,7 @@
         android:layout_marginTop="8.9dp">
 
         <TextView
-            android:id="@+id/numoflec"
+            android:id="@+id/num_of_lec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -36,7 +36,7 @@
         android:id="@+id/rel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.MainActivity">
+        tools:context=".ui.GTMode.GTModeActivity">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -44,10 +44,11 @@
             android:layout_height="match_parent"
             android:paddingBottom="40dp"
             android:layout_marginLeft="45dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/rv_gt_mylecture">
 
         </androidx.recyclerview.widget.RecyclerView>
+
+
 
         <Button
             android:id="@+id/button"
@@ -58,4 +59,6 @@
 
             android:text="신규 강의 개설하기" />
     </RelativeLayout>
+
+
 </LinearLayout>

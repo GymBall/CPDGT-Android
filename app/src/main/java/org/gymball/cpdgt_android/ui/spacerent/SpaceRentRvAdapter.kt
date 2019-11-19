@@ -9,11 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import org.gymball.cpdgt_android.R
-import org.gymball.cpdgt_android.ui.gtlecture.GTLecRvAdapter
-import org.gymball.cpdgt_android.ui.gtlecture.GTLecture
 
 
-class SpaceRentRvAdapter (val ctx: Context, val LectureList: ArrayList<SpaceRentData>, var total: Int):
+class SpaceRentRvAdapter (val ctx: Context, var SpaceList: ArrayList<SpaceRentData>, var total: Int):
     RecyclerView.Adapter<SpaceRentRvAdapter.Holder>() {
 
 
@@ -29,13 +27,13 @@ class SpaceRentRvAdapter (val ctx: Context, val LectureList: ArrayList<SpaceRent
         //     ctx.startActivity<
         //  }
         Glide.with(ctx)
-            .load(LectureList[position].space_image)
+            .load(SpaceList[position].space_image)
             .into(holder.s_Image)
-        holder.r_count.text = LectureList[position].rental_count
-        holder.s_category.text = LectureList[position].space_category
-        holder.s_name.text = LectureList[position].space_name
-        holder.s_address.text = LectureList[position].space_address
-        holder.s_time.text = LectureList[position].space_time
+        holder.r_count.text = SpaceList[position].rental_count
+        holder.s_category.text = SpaceList[position].space_category
+        holder.s_name.text = SpaceList[position].space_name
+        holder.s_address.text = SpaceList[position].space_address
+        holder.s_time.text = SpaceList[position].space_time
 
 
     }

@@ -1,25 +1,21 @@
-@file:Suppress("DEPRECATION")
-
-package org.gymball.cpdgt_android.ui
+package org.gymball.cpdgt_android.ui.GTMode
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import org.gymball.cpdgt_android.ui.gtlecture.GTLectureFragment
-import org.gymball.cpdgt_android.ui.home.HomeFragment
-import org.gymball.cpdgt_android.ui.lecture.LectureFragment
-import org.gymball.cpdgt_android.ui.my.MyFragment
-import org.gymball.cpdgt_android.ui.search.SearchFragment
 import org.gymball.cpdgt_android.ui.spacerent.SpaceRentFragment
 
-class MainTabFragmentStatePagerAdapter (fm: FragmentManager, private val fragmentCount: Int) : FragmentStatePagerAdapter(fm) {
+class GTModeTabFragmentStatePagerAdapter (fm:FragmentManager, private val fragmentCount:Int)  :FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
-        when(position) {
+        when(position){
             0 -> return GTLectureFragment()
             1 -> return SpaceRentFragment()
             else -> return GTLectureFragment()
+
         }
     }
 
     override fun getCount(): Int = fragmentCount
+
 }
