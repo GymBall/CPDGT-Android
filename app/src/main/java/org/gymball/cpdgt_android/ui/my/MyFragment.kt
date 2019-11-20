@@ -20,6 +20,7 @@ class MyFragment : Fragment() {
     var dataList: ArrayList<LectureAbsData> = arrayListOf(
         LectureAbsData("클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뫄뫄"),
         LectureAbsData("클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"묘묘"),
+        LectureAbsData("클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뮤뮤"),
         LectureAbsData("클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뮤뮤")
     )
 
