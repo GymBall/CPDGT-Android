@@ -41,13 +41,4 @@ class MainActivity : AppCompatActivity() {
         tl_main_act_bottom_bar.getTabAt(3)!!.customView = tabLayout.findViewById(R.id.btn_tab_main_act_my)
     }
 
-    fun replaceFragment(fragment: Fragment){
-        val fragmentManager = supportFragmentManager.beginTransaction()
-
-        fragmentManager.apply{
-            replace(R.id.vp_main_act_pager, fragment)
-            addToBackStack(null)
-        }
-        fragmentManager.commit()
-    }
 }

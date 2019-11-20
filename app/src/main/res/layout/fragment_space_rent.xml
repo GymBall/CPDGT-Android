@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFCFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4.8dp"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:textSize="18sp"
+                android:textColor="#c40000"
+                android:lineSpacingExtra="2sp"
+                android:text="POWER"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:textSize="18sp"
+                android:textColor="#5975a2"
+                android:lineSpacingExtra="2sp"
+                android:text="GYM"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:textSize="8.8sp"
+                android:lineSpacingExtra="1.3sp"
+                android:textColor="#2c77f1"
+                android:text="  광고  "
+                android:background="@drawable/blue_rectangle_empty" ></TextView>
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ad_powergym"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:background="@drawable/bliss_ad" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ad_powergym_cat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/nanumsquare_bold"
+                        android:letterSpacing="-0.07"
+                        android:lineSpacingExtra="8.3sp"
+                        android:text="요가 | 발레 | 기타"
+                        android:textColor="#2c77f1"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/ad_powergym_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/nanumsquare_bold"
+                        android:lineSpacingExtra="3.8sp"
+                        android:text="블리스 필라테스"
+                        android:textColor="#404040"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/placeholder">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/ad_powergym_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanumsquare_light"
+                            android:lineSpacingExtra="6.3sp"
+                            android:text=" 서울특별시 용산구 청파로47길 78 "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/ticktock">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/ad_powergym_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/nanumsquare_light"
+                            android:lineSpacingExtra="6.3sp"
+                            android:text=" 주중 오후 7시 이후 사용가능 | 주말 전시간대 사용가능 "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            >
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/nanumsquare_regular"
+                                android:lineSpacingExtra="3.8sp"
+                                android:text="총 78회 대여"
+                                android:textColor="#1263e6"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/skyblue_rectangle_fill"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="40dp"
+            android:elevation="5dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_spaceview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never">
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_space_rent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공간 대여하기"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:layout_centerInParent="true">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

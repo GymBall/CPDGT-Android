@@ -16,8 +16,10 @@ import kotlinx.android.synthetic.main.fragment_home_main.*
 
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.ui.MainActivity
+import org.gymball.cpdgt_android.ui.gtmode.GTModeActivity
 import org.jetbrains.anko.find
 import org.jetbrains.anko.support.v4.ctx
+import org.jetbrains.anko.support.v4.startActivity
 
 class HomeMainFragment : Fragment() {
 
@@ -88,8 +90,9 @@ class HomeMainFragment : Fragment() {
             pos = 8
             replaceFragment(pos)
         }
-
-
+        btn_gt_mode.setOnClickListener {
+            startActivity<GTModeActivity>()
+        }
     }
 
     private fun replaceFragment(pos:Int) {

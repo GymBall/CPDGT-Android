@@ -84,11 +84,11 @@ class LectureDetailActivity : AppCompatActivity() {
     private fun selectedLectureDetailTab(position:Int) {
         if(position==0) {
             tv_tl_lecture_detail_class.setTextColor(resources.getColor(R.color.colorBlack))
-            tv_tl_lecture_detail_teacher.setTextColor(resources.getColor(R.color.lecturedetailDefault))
+            tv_tl_lecture_detail_teacher.setTextColor(resources.getColor(R.color.gtmodeDefault))
             tv_tl_lecture_detail_class.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_bold.ttf")
             tv_tl_lecture_detail_teacher.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_regular.ttf")
         } else {
-            tv_tl_lecture_detail_class.setTextColor(resources.getColor(R.color.lecturedetailDefault))
+            tv_tl_lecture_detail_class.setTextColor(resources.getColor(R.color.gtmodeDefault))
             tv_tl_lecture_detail_teacher.setTextColor(resources.getColor(R.color.colorBlack))
             tv_tl_lecture_detail_class.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_regular.ttf")
             tv_tl_lecture_detail_teacher.typeface = Typeface.createFromAsset(assets,"font/nanumsquare_bold.ttf")
