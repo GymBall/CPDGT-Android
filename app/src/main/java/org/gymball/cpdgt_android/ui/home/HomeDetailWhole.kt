@@ -48,7 +48,7 @@ class HomeDetailWhole: Fragment() {
         rv_adv_class_list.adapter = homeDetailRecyclerViewAdapter
         rv_adv_class_list.layoutManager = LinearLayoutManager(activity)
 
-        rv_adv_class_list.addItemDecoration(DividerItemDecoration(context, 1))
+        //rv_adv_class_list.addItemDecoration(DividerItemDecoration(context, 1))
 
         var dataList2 : ArrayList<HomeDetailData> = ArrayList()
         dataList2.add(HomeDetailData(getResources().getDrawable(R.drawable.detail_tak_img)!!, "태권도 초급반", "이대훈", "3.5", "화,목 오후 8시", "눈높이 교육으로 배워가는 태권도! 이 수업과 함께라면 당신도 태권도 고수!"))
@@ -63,7 +63,7 @@ class HomeDetailWhole: Fragment() {
         homeDetailRecyclerViewAdapter = HomeDetailRecyclerViewAdapter(activity!!, dataList2)
         rv_class_list.adapter = homeDetailRecyclerViewAdapter
         rv_class_list.layoutManager = LinearLayoutManager(activity)
-        rv_class_list.addItemDecoration(DividerItemDecoration(context, 1))
+        //rv_class_list.addItemDecoration(DividerItemDecoration(context, 1))
     }
 
 

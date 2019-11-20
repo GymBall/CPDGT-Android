@@ -20,7 +20,7 @@
             app:tabIndicatorColor="@color/colorAccent"
             android:layout_alignParentTop="true"
             app:tabMode="scrollable"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             app:tabRippleColor="@null"
             app:tabBackground="@null"
             app:tabIndicatorFullWidth="false" />
