@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.activity_login.*
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.ui.MainActivity
 import org.gymball.cpdgt_android.ui.join.JoinActivity
+import org.gymball.cpdgt_android.ui.join.gsJoinActivity
+import org.gymball.cpdgt_android.ui.join.gtJoinActivity
 import org.jetbrains.anko.startActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -23,12 +25,13 @@ class LoginActivity : AppCompatActivity() {
     private fun setOnClickListener() {
         loginButton.setOnClickListener {
             startActivity<MainActivity>()
+            finish()
         }
         GTJoinButton.setOnClickListener {
-            startActivity<JoinActivity>() //짐선생 조인으로 수정하기
+            startActivity<gtJoinActivity>() //짐선생 조인으로 수정하기
         }
         GSJoinButton.setOnClickListener {
-            startActivity<JoinActivity>() //짐학생 조인으로 수정하기
+            startActivity<gsJoinActivity>() //짐학생 조인으로 수정하기
         }
     }
 

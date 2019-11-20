@@ -32,17 +32,11 @@ class MyFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setRecyclerView()
-        setOnClickListener()
     }
 
     private fun setRecyclerView() {
         myRecyclerViewAdapter = MyRecyclerViewAdapter(activity!!, dataList, dataList.size)
         rv_my_recent.adapter = myRecyclerViewAdapter
         rv_my_recent.layoutManager = LinearLayoutManager(activity!!, LinearLayoutManager.HORIZONTAL, false)
-    }
-    private fun setOnClickListener() {
-        loginInfo.setOnClickListener {
-            startActivity<LoginActivity>()
-        }
     }
 }
