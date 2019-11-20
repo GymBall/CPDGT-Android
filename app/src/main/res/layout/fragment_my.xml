@@ -14,36 +14,30 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp">
+                android:id="@+id/top"
+                android:layout_marginHorizontal="27dp">
                 <View
-                    android:layout_width="105.5dp"
-                    android:layout_height="8.3dp"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="89.5dp"
-                    android:background="@color/colorSkyBlue"/>
+                    android:layout_width="87.5dp"
+                    android:layout_height="8dp"
+                    android:background="#d6eeff"
+                    android:layout_alignBottom="@id/text">
+                </View>
                 <TextView
+                    android:id="@+id/text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginLeft="27dp"
-                    android:textSize="25sp"
+                    android:text="마이GYM"
+                    android:fontFamily="@font/nanumsquare_regular"
                     android:textColor="#151515"
-                    android:lineSpacingExtra="3.5sp"
-                    tools:text="마이GYM" />
-
+                    android:textSize="25sp"
+                    android:layout_marginTop="40dp"/>
             </RelativeLayout>
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_width="18.3dp"
-                android:layout_height="18.3dp"
-                android:layout_marginRight="5dp"
-                android:layout_gravity="right"
-                android:background="@drawable/imageselectbutton"/>
+
             <ImageView
                 android:id="@+id/myGymBackgroundImage"
                 android:layout_width="match_parent"
                 android:layout_height="310dp"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/mygymbackgroundimage" />
             <TextView
                 android:layout_width="wrap_content"
@@ -51,10 +45,11 @@
                 android:layout_marginLeft="12.8dp"
                 android:textSize="26sp"
                 android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nanumsquare_bold"
                 android:layout_marginTop="-150.5dp"
                 android:lineSpacingExtra="-8.8sp"
                 android:gravity="center_horizontal"
-                tools:text="청파동눈송이 님"/>
+                android:text="청파동눈송이 님"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,9 +57,10 @@
                 android:layout_marginLeft="12.8dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:lineSpacingExtra="-8.8sp"
                 android:gravity="center_horizontal"
-                tools:text="gymstudent@sookmyung.ac.kr"/>
+                android:text="gymstudent@sookmyung.ac.kr"/>
             <View
                 android:layout_width="203.8dp"
                 android:layout_height="2.3dp"
@@ -81,24 +77,27 @@
                         android:textSize="8.8sp"
                         android:layout_marginLeft="18dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_regular"
                         android:lineSpacingExtra="1.3sp"
-                        tools:text="참여" />
+                        android:text="참여" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="8.8sp"
                         android:layout_marginLeft="37dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_regular"
                         android:lineSpacingExtra="1.3sp"
-                        tools:text="찜 목록"/>
+                        android:text="찜 목록"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="8.8sp"
                         android:layout_marginLeft="37dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_regular"
                         android:lineSpacingExtra="1.3sp"
-                        tools:text="리뷰"/>
+                        android:text="리뷰"/>
                 </TableRow>
                 <TableRow>
                     <TextView
@@ -108,8 +107,9 @@
                         android:textSize="17.5sp"
                         android:layout_marginLeft="18dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_bold"
                         android:lineSpacingExtra="2.5sp"
-                        tools:text="5"/>
+                        android:text="3"/>
                     <TextView
                         android:id="@+id/pickNum"
                         android:layout_width="wrap_content"
@@ -117,26 +117,36 @@
                         android:textSize="17.5sp"
                         android:layout_marginLeft="43dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_bold"
                         android:lineSpacingExtra="2.5sp"
-                        tools:text="1" />
+                        android:text="1" />
                     <TextView
                         android:id="@+id/reviewNum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="17.5sp"
-                        android:layout_marginLeft="43dp"
+                        android:layout_marginLeft="40dp"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_bold"
                         android:lineSpacingExtra="2.5sp"
-                        tools:text="3" />
+                        android:text="5" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
+        <Button
+            android:id="@+id/my_backgroundimage_button"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginTop="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/imageselectbutton"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="392dp"
-            android:layout_marginTop="420dp"
+            android:layout_marginTop="400dp"
             android:paddingLeft="15dp"
-            android:paddingTop="110dp"
+            android:paddingTop="120dp"
             android:orientation="vertical"
             android:background="@drawable/gray_white_gradient_fill">
             <LinearLayout
@@ -149,14 +159,17 @@
                     android:textColor="#404040"
                     android:letterSpacing="-0.05"
                     android:lineSpacingExtra="2sp"
-                    tools:text="최근 본 짐선생" />
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:text="최근 본 짐선생" />
                 <Button
                     android:layout_width="9.5dp"
                     android:layout_height="12.8dp"
+                    android:layout_marginLeft="4dp"
                     android:background="@drawable/arrowbutton"/>
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_my_recent"
+                android:orientation="horizontal"
                 android:layout_width="380dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
@@ -165,7 +178,7 @@
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="108.3dp"
-            android:layout_marginTop="389dp"
+            android:layout_marginTop="380dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/white_gray_border_fill"
             android:orientation="vertical">
@@ -181,7 +194,8 @@
                 android:lineSpacingExtra="2sp"
                 android:layout_marginLeft="2dp"
                 android:background="@color/colorWhite"
-                tools:text="로그인 정보"/>
+                android:fontFamily="@font/nanumsquare_regular"
+                android:text="로그인 정보"/>
             <View
                 android:layout_width="380dp"
                 android:layout_height="1dp"
@@ -198,34 +212,37 @@
                 android:lineSpacingExtra="2sp"
                 android:layout_marginLeft="2dp"
                 android:background="@color/colorWhite"
-                tools:text="공지사항"/>
+                android:fontFamily="@font/nanumsquare_regular"
+                android:text="공지사항"/>
             <View
                 android:layout_width="380dp"
                 android:layout_height="1dp"
                 android:background="#E0E0E0"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="36.1dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
+                    android:layout_marginTop="8.8dp"
                     android:layout_marginLeft="10.5dp"
                     android:textSize="13.8sp"
                     android:textColor="#404040"
                     android:letterSpacing="-0.05"
                     android:lineSpacingExtra="2sp"
-                    tools:text="버전 정보"/>
+                    android:fontFamily="@font/nanumsquare_regular"
+                    android:text="버전 정보"/>
                 <TextView
                     android:layout_width="300.5dp"
                     android:layout_height="15.3dp"
-                    android:layout_marginTop="9dp"
+                    android:layout_marginTop="4.5dp"
                     android:textAlignment="textEnd"
                     android:textSize="8.8sp"
                     android:textColor="#69696e"
                     android:letterSpacing="-0.05"
                     android:lineSpacingExtra="1.3sp"
-                    tools:text="최신 1.0.8 사용중"/>
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text="최신 1.0.8 사용중"/>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
