@@ -28,8 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:fontFamily="@font/nanumsquare_bold"
             android:textSize="18sp"
-            android:layout_marginHorizontal="12dp"
+
             android:text="내 강의"
             android:textColor="#5f5f5f"
             android:layout_centerHorizontal="true"
@@ -48,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:fontFamily="@font/nanumsquare_bold"
             android:textSize="18sp"
             android:text="공간 대여"
             android:textColor="#5f5f5f"

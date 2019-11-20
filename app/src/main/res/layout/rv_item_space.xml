@@ -7,6 +7,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#c2c2d4"/>
     <LinearLayout
         android:layout_width="380dp"
         android:layout_height="wrap_content"
@@ -15,58 +19,86 @@
 
         <ImageView
             android:id="@+id/space_image"
-            android:layout_width="96.8dp"
-            android:layout_height="91.3dp"
+            android:layout_width="96dp"
+            android:layout_height="91dp"
 
             android:background="@drawable/cp_yoga">
 
         </ImageView>
         <LinearLayout
-            android:layout_width="329.3dp"
-            android:layout_height="91.3dp"
+            android:layout_width="329dp"
+            android:layout_height="91dp"
             android:layout_marginBottom="3dp"
-            android:background="@drawable/white_border_fill"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/rental_count"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4.5dp"
-                android:layout_marginLeft="220dp"
-                android:textSize="10sp"
-                android:textColor="#1263e6"
-                android:lineSpacingExtra="3.8sp"
-                tools:text="총 12회 대여 "
-                />
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.5dp"
+                    android:layout_marginLeft="215dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:textSize="13sp"
+                    android:textColor="#1263e6"
+                    android:lineSpacingExtra="3.8sp"
+                    android:text="총 "
+                    />
+                <TextView
+                    android:id="@+id/rental_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.5dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:textSize="13sp"
+                    android:textColor="#1263e6"
+                    android:lineSpacingExtra="3.8sp"
+                    android:text="12"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.5dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:textSize="13sp"
+                    android:textColor="#1263e6"
+                    android:lineSpacingExtra="3.8sp"
+                    android:text="회 대여 "
+                    />
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/space_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="11.3dp"
-                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nanumsquare_bold"
                 android:letterSpacing="-0.07"
                 android:lineSpacingExtra="8.3sp"
                 android:textColor="#2c77f1"
-                android:textSize="5.5sp"
-                tools:text="요가 | 발레 | 댄스 | 기타 " />
+                android:textSize="9.5sp"
+                android:text="요가 | 발레 | 댄스 | 기타 " />
 
             <TextView
                 android:id="@+id/space_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="11.3dp"
-                android:layout_marginTop="0.8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nanumsquare_bold"
                 android:lineSpacingExtra="3.8sp"
                 android:textColor="#404040"
-                android:textSize="10sp"
-                tools:text="청파 요가원 " />
+                android:textSize="15sp"
+                android:text="청파 요가원 " />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="11.3dp"
-                android:layout_marginTop="2dp">
+                android:layout_marginTop="4dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -80,16 +112,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:lineSpacingExtra="6.3sp"
+                    android:fontFamily="@font/nanumsquare_bold"
                     android:textColor="#404040"
-                    android:textSize="7.5sp"
-                    tools:text="서울특별시 용산구 청파로47길 45 " />
+                    android:textSize="11.5sp"
+                    android:text="서울특별시 용산구 청파로47길 45 " />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="11.3dp"
-                android:layout_marginTop="3dp">
+                android:layout_marginTop="4dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -103,10 +136,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
-                    android:textSize="7.5sp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:textSize="10.5sp"
                     android:textColor="#404040"
                     android:lineSpacingExtra="6.3sp"
-                    tools:text="주중 오후 8시 이후 사용가능 | 주말 전시간대 사용가능 "
+                    android:text="주중 오후 8시 이후 사용가능 | 주말 전시간대 사용가능 "
                     />
 
 
@@ -115,4 +149,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
 </LinearLayout>

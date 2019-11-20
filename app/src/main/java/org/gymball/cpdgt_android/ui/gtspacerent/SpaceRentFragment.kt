@@ -31,8 +31,8 @@ class SpaceRentFragment : Fragment(){
         setRecyclerView()
         // setView()
         //setOnClickListener()
-        val snapHelper = LinearSnapHelper()
-        snapHelper.attachToRecyclerView(recycler_spaceview)
+        //val snapHelper = LinearSnapHelper()
+        //snapHelper.attachToRecyclerView(recycler_spaceview)
     }
 
     private fun setView() {
