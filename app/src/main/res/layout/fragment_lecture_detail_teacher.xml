@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.lecturedetail.LectureDetailTeacherFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#_"
+            android:textSize="17sp"
+            android:textColor="#2c77f1"
+            android:fontFamily="@font/nanumsquare_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="짐선생 경력"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanumsquare_bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/nanumsquare_regular"
+            android:textColor="#404040"
+            android:lineSpacingExtra="7sp"
+            android:text="경남체육고등학교 졸업
+\n용인대학교 태권도 학과 졸업
+\n용인대학교 태권도시범단 주장  "/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/nanumsquare_regular"
+            android:textColor="#404040"
+            android:lineSpacingExtra="7sp"
+            android:text="태권도 공인 5단
+\n체육 교원 자격증
+\n그 외 국내 및 해외 100여회 활동"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#_"
+            android:textSize="17sp"
+            android:textColor="#2c77f1"
+            android:fontFamily="@font/nanumsquare_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="짐선생 소개"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanumsquare_bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="7sp"
+        android:fontFamily="@font/nanumsquare_regular"
+        android:textColor="#404040"
+        android:text="안녕하세요, 열정넘치는 이수영 짐선생입니다!
+\n저는 육체적 수련 뿐만 아니라 정신적 수련을 통해 정신적으로도
+\n바르고 강한 마음을 가질 수 있도록 교육하고 있습니다.
+\n즐거운 분위기 속에서 수련할 수 있도록 최선을 다하여 지도할
+\n것이며, 안전에 유념하여 다치는 일이 없도록 지도하겠습니다.
+\n궁금하신 문의사항은 편하게 연락주시고 상담받아보세요."/>
+
+</LinearLayout>
