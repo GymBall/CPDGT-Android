@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.lecture.LectureFragment"
-    android:orientation="vertical"
     android:background="@color/colorWhite">
     
     <RelativeLayout
@@ -14,7 +13,7 @@
         android:id="@+id/top"
         android:layout_marginHorizontal="27dp">
         <View
-            android:layout_width="87.5dp"
+            android:layout_width="80dp"
             android:layout_height="8dp"
             android:background="#d6eeff"
             android:layout_alignBottom="@id/text">
