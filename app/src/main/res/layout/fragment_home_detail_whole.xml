@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafcff"
+    tools:context=".ui.home.HomeDetailFragment"
+    android:overScrollMode="never">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafcff">
+        <RelativeLayout
+            android:id="@+id/adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#fafcff"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:id="@+id/adv_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/power_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22.8dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text="POWER"
+                    android:textColor="#c40000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/gym_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/power_txt"
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text=" 짐선생"
+                    android:textColor="#383838"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/gym_txt"
+                    android:background="@drawable/shape_adv"
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text="광고"
+                    android:textColor="#2c77f1"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rl_adv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adv_txt"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="5dp"
+                android:background="#ffffff">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_adv_class_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <View
+            android:layout_below="@id/adv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#F2F7FF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adv"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#fafcff">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="5dp"
+                android:background="#ffffff">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_class_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
