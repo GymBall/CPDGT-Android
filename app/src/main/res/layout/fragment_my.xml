@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.my.MyFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.my.MyFragment"
+    android:background="@color/colorWhite">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,220 +16,294 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp">
+                android:id="@+id/top"
+                android:layout_marginHorizontal="27dp">
                 <View
-                    android:layout_width="105.5dp"
-                    android:layout_height="8.3dp"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="89.5dp"
-                    android:background="@color/colorSkyBlue"/>
+                    android:layout_width="87.5dp"
+                    android:layout_height="8dp"
+                    android:background="#d6eeff"
+                    android:layout_alignBottom="@id/text">
+                </View>
                 <TextView
+                    android:id="@+id/text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginLeft="27dp"
-                    android:textSize="25sp"
+                    android:text="마이GYM"
+                    android:fontFamily="@font/nanumsquare_regular"
                     android:textColor="#151515"
-                    android:lineSpacingExtra="3.5sp"
-                    tools:text="마이GYM" />
-
+                    android:textSize="25sp"
+                    android:layout_marginTop="40dp"/>
             </RelativeLayout>
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_width="18.3dp"
-                android:layout_height="18.3dp"
-                android:layout_marginRight="5dp"
-                android:layout_gravity="right"
-                android:background="@drawable/imageselectbutton"/>
-            <ImageView
-                android:id="@+id/myGymBackgroundImage"
-                android:layout_width="match_parent"
-                android:layout_height="310dp"
-                android:layout_marginTop="-30dp"
-                android:src="@drawable/mygymbackgroundimage" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/myGymBackgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:src="@drawable/mygymbackgroundimage" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:background="#7333344a"/>
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12.8dp"
-                android:textSize="26sp"
+                android:layout_marginLeft="20dp"
+                android:textSize="30sp"
                 android:textColor="@color/colorWhite"
-                android:layout_marginTop="-150.5dp"
-                android:lineSpacingExtra="-8.8sp"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:layout_marginTop="-155dp"
                 android:gravity="center_horizontal"
-                tools:text="청파동눈송이 님"/>
+                android:text="청파동눈송이 님"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:layout_marginLeft="12.8dp"
-                android:layout_marginBottom="7dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="9dp"
                 android:textColor="@color/colorWhite"
-                android:lineSpacingExtra="-8.8sp"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:gravity="center_horizontal"
-                tools:text="gymstudent@sookmyung.ac.kr"/>
+                android:text="gymstudent@sookmyung.ac.kr"/>
             <View
-                android:layout_width="203.8dp"
-                android:layout_height="2.3dp"
+                android:layout_width="230dp"
+                android:layout_height="3dp"
                 android:layout_marginBottom="6.5dp"
                 android:background="#59ffffff"/>
-            <TableLayout
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="200dp"
+                android:weightSum="3"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp">
-                <TableRow>
+                android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="8.8sp"
-                        android:layout_marginLeft="18dp"
-                        android:textColor="@color/colorWhite"
-                        android:lineSpacingExtra="1.3sp"
-                        tools:text="참여" />
+                        android:textSize="15sp"
+                        android:textColor="#f4f4f4"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:layout_gravity="center_horizontal"
+                        android:text="참여" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="8.8sp"
-                        android:layout_marginLeft="37dp"
+                        android:textSize="20sp"
                         android:textColor="@color/colorWhite"
-                        android:lineSpacingExtra="1.3sp"
-                        tools:text="찜 목록"/>
+                        android:fontFamily="@font/nanumsquare_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:text="3"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="8.8sp"
-                        android:layout_marginLeft="37dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#f4f4f4"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="찜 목록" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
                         android:textColor="@color/colorWhite"
-                        android:lineSpacingExtra="1.3sp"
-                        tools:text="리뷰"/>
-                </TableRow>
-                <TableRow>
+                        android:fontFamily="@font/nanumsquare_bold"
+                        android:text="1"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#f4f4f4"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="리뷰" />
                     <TextView
                         android:id="@+id/lectureNum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="17.5sp"
-                        android:layout_marginLeft="18dp"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
                         android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nanumsquare_bold"
                         android:lineSpacingExtra="2.5sp"
-                        tools:text="5"/>
-                    <TextView
-                        android:id="@+id/pickNum"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="17.5sp"
-                        android:layout_marginLeft="43dp"
-                        android:textColor="@color/colorWhite"
-                        android:lineSpacingExtra="2.5sp"
-                        tools:text="1" />
-                    <TextView
-                        android:id="@+id/reviewNum"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="17.5sp"
-                        android:layout_marginLeft="43dp"
-                        android:textColor="@color/colorWhite"
-                        android:lineSpacingExtra="2.5sp"
-                        tools:text="3" />
-                </TableRow>
-            </TableLayout>
+                        android:text="5"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
+        <Button
+            android:id="@+id/my_backgroundimage_button"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginTop="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/imageselectbutton"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="392dp"
-            android:layout_marginTop="420dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="110dp"
+            android:layout_marginTop="400dp"
+            android:paddingTop="120dp"
             android:orientation="vertical"
             android:background="@drawable/gray_white_gradient_fill">
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17.8sp"
+                    android:textSize="18sp"
+                    android:paddingLeft="15dp"
                     android:textColor="#404040"
-                    android:letterSpacing="-0.05"
-                    android:lineSpacingExtra="2sp"
-                    tools:text="최근 본 짐선생" />
-                <Button
-                    android:layout_width="9.5dp"
-                    android:layout_height="12.8dp"
-                    android:background="@drawable/arrowbutton"/>
+                    android:fontFamily="@font/nanumsquare_regular"
+                    android:text="최근 본 짐선생" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_point_to_right"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_my_recent"
-                android:layout_width="380dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="10dp"/>
+                android:overScrollMode="never"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:clipToPadding="false"/>
         </LinearLayout>
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="380dp"
-            android:layout_height="108.3dp"
-            android:layout_marginTop="389dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="380dp"
             android:layout_marginLeft="15dp"
-            android:background="@drawable/white_gray_border_fill"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/loginInfo"
-                android:layout_width="376dp"
-                android:layout_height="36.1dp"
-                android:textSize="13.8sp"
-                android:textAlignment="textStart"
-                android:paddingLeft="10dp"
-                android:textColor="#404040"
-                android:letterSpacing="-0.05"
-                android:lineSpacingExtra="2sp"
-                android:layout_marginLeft="2dp"
-                android:background="@color/colorWhite"
-                tools:text="로그인 정보"/>
-            <View
-                android:layout_width="380dp"
-                android:layout_height="1dp"
-                android:background="#E0E0E0"/>
-            <Button
-                android:id="@+id/notification"
-                android:layout_width="376dp"
-                android:layout_height="36.1dp"
-                android:textSize="13.8sp"
-                android:textAlignment="textStart"
-                android:paddingLeft="10dp"
-                android:textColor="#404040"
-                android:letterSpacing="-0.05"
-                android:lineSpacingExtra="2sp"
-                android:layout_marginLeft="2dp"
-                android:background="@color/colorWhite"
-                tools:text="공지사항"/>
-            <View
-                android:layout_width="380dp"
-                android:layout_height="1dp"
-                android:background="#E0E0E0"/>
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="0dp"
+            android:elevation="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginLeft="10.5dp"
-                    android:textSize="13.8sp"
-                    android:textColor="#404040"
-                    android:letterSpacing="-0.05"
-                    android:lineSpacingExtra="2sp"
-                    tools:text="버전 정보"/>
-                <TextView
-                    android:layout_width="300.5dp"
-                    android:layout_height="15.3dp"
-                    android:layout_marginTop="9dp"
-                    android:textAlignment="textEnd"
-                    android:textSize="8.8sp"
-                    android:textColor="#69696e"
-                    android:letterSpacing="-0.05"
-                    android:lineSpacingExtra="1.3sp"
-                    tools:text="최신 1.0.8 사용중"/>
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <RelativeLayout
+                    android:id="@+id/loginInfo"
+                    android:layout_width="376dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textAlignment="textStart"
+                        android:textColor="#404040"
+                        android:letterSpacing="-0.05"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="로그인 정보"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_point_to_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginHorizontal="7dp"/>
+                <RelativeLayout
+                    android:id="@+id/notification"
+                    android:layout_width="376dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textAlignment="textStart"
+                        android:textColor="#404040"
+                        android:letterSpacing="-0.05"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="공지사항"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_point_to_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="380dp"
+                    android:layout_height="0.2dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginHorizontal="7dp"/>
+                <RelativeLayout
+                    android:layout_width="376dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textAlignment="textStart"
+                        android:textColor="#404040"
+                        android:letterSpacing="-0.05"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="버전 정보"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="textStart"
+                        android:textColor="#69696e"
+                        android:layout_marginRight="10dp"
+                        android:letterSpacing="-0.05"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:text="최신 1.0.1 사용중"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
 
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 </FrameLayout>

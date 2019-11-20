@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/colorWhite">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical">
 
         <TextView
@@ -23,43 +20,51 @@
             android:layout_marginBottom="10.1dp"
             android:lineSpacingExtra="1.5sp"
             android:textColor="#404040"
-            android:textSize="13.8sp"
+            android:textSize="15sp"
             android:layout_gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="아이디  로그인" />
+            android:fontFamily="@font/nanumsquare_bold"
+            android:text="아이디  로그인" />
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="0.2dp"
+            android:background="#6c6c6c"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="97.2dp"
             android:layout_marginBottom="29.5dp"
             android:layout_gravity="center"
-            android:textSize="13.8sp"
+            android:textSize="16sp"
             android:textColor="#3672d3"
             android:lineSpacingExtra="1.5sp"
-            tools:text="아이디와 비밀번호 입력"
+            android:fontFamily="@font/nanumsquare_regular"
+            android:text="아이디와 비밀번호 입력"
             />
         <EditText
-            android:id="@+id/editID"
+            android:id="@+id/et_act_login_id"
             android:layout_width="270.8dp"
             android:layout_height="34.5dp"
             android:layout_marginBottom="25.5dp"
             android:paddingLeft="12dp"
             android:textSize="15dp"
+            android:singleLine="true"
             android:layout_gravity="center"
             android:background="@drawable/idpassword"
+            android:fontFamily="@font/nanumsquare_regular"
             android:hint="아이디"/>
         <EditText
-            android:id="@+id/editPassword"
+            android:id="@+id/et_act_login_pw"
             android:layout_width="270.8dp"
             android:layout_height="34.5dp"
             android:paddingLeft="12dp"
             android:textSize="15dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
             android:layout_gravity="center"
             android:background="@drawable/idpassword"
+            android:fontFamily="@font/nanumsquare_regular"
             android:hint="비밀번호"/>
         <Button
             android:id="@+id/loginButton"
@@ -67,6 +72,7 @@
             android:layout_height="32.3dp"
             android:layout_marginTop="57.3dp"
             android:layout_gravity="center"
+
             android:background="@drawable/loginbutton"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,4 +96,4 @@
                 android:background="@drawable/gsjoin"/>
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
