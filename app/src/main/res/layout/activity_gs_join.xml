@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.join.gsJoinActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62.5dp"
+                android:layout_marginBottom="10.1dp"
+                android:lineSpacingExtra="1.5sp"
+                android:textColor="#404040"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/nanumsquare_bold"
+                android:text="짐학생 회원가입" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#6c6c6c"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginHorizontal="33.2dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47.6dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/id"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="26.2dp"
+                android:layout_marginTop="5.2dp"
+                android:background="@drawable/invalid_" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/password"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="26.2dp"
+                android:layout_marginTop="5.2dp"
+                android:background="@drawable/invalid_" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/name" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="26.2dp"
+                android:layout_marginTop="5.2dp"
+                android:background="@drawable/invalid_" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/number" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="26.2dp"
+                android:layout_marginTop="5.2dp"
+                android:background="@drawable/invalid_" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/birth" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="26.2dp"
+                android:layout_marginTop="5.2dp"
+                android:background="@drawable/invalid_" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#0e0e0e"
+                android:lineSpacingExtra="2sp"
+                android:src="@drawable/sex"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:background="#f0f5fc"
+                    android:layout_margin="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="여"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:background="#f0f5fc"
+                    android:layout_margin="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="남"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+        <TextView
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완 료"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:layout_centerInParent="true">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

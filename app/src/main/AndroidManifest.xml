@@ -9,21 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ui.gtmode.gtlecture.GTLectureNewActivity"></activity>
+        <activity android:name=".ui.join.gsJoinActivity"></activity>
+        <activity android:name=".ui.join.gtJoinActivity" />
+        <activity android:name=".ui.gtmode.gtlecture.GTLectureNewActivity" />
         <activity android:name=".ui.gtmode.gtlecture.GTLectureModify" />
         <activity android:name=".ui.gtmode.GTModeActivity" />
         <activity android:name=".ui.lecturedetail.ChatActivity" />
         <activity android:name=".ui.lecturedetail.LectureDetailActivity" />
         <activity android:name=".ui.lecture.LectureCommentActivity" />
-        <activity android:name=".ui.login.LoginActivity" />
-        <activity android:name=".ui.join.JoinActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.join.JoinActivity">
+
+        </activity>
+        <activity android:name=".ui.MainActivity" />
     </application>
 
 </manifest>
