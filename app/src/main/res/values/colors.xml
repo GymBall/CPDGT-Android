@@ -7,5 +7,6 @@
     <color name="colorAccent">#2C77F1</color>
     <color name="transparent">#00000000</color>
     <color name="colorBlack">#000000</color>
+    <color name="gtmodeDefault">#5f5f5f</color>
     <color name="lecturedetailDefault">#5f5f5f</color>
 </resources>
