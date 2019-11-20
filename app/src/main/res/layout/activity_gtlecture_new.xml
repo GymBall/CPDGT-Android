@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gtmode.gtlecture.GTLectureNewActivity"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#404040"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:fontFamily="@fot/nanumsquare_bold"
+            android:text="신규 강의 개설하기" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#6c6c6c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="22.3dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="17.8dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="수업 이름"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="22.3dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="17.8dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="수업 시간대"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="22.3dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="17.8dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="수업 소개"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18.5dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="12.8dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="한마디"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:background="#c2c2d4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="12.8dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="짐선생 경력"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="29.3dp"
+                    android:background="@drawable/blue_circle_fill" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_marginTop="22.5dp"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:lineSpacingExtra="2sp"
+                    android:text="짐선생 소개"
+                    android:textColor="#000000"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_change_intro_yes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료하기"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:layout_centerInParent="true">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

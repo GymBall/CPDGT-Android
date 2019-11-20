@@ -4,8 +4,8 @@ package org.gymball.cpdgt_android.ui.gtmode
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import org.gymball.cpdgt_android.ui.gtlecture.GTLectureFragment
-import org.gymball.cpdgt_android.ui.gtspacerent.SpaceRentFragment
+import org.gymball.cpdgt_android.ui.gtmode.gtlecture.GTLectureFragment
+import org.gymball.cpdgt_android.ui.gtmode.gtspacerent.SpaceRentFragment
 
 class GTModeTabFragmentStatePagerAdapter (fm:FragmentManager, private val fragmentCount:Int)  :FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment {

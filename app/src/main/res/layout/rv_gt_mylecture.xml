@@ -1,241 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
-    android:orientation="vertical">
-
-    <RelativeLayout
-        android:layout_width="380dp"
-        android:layout_height="123.8dp">
-
-
-        <ImageView
-            android:id="@+id/gtlec_background"
-            android:layout_width="380dp"
-            android:layout_height="123.8dp"
-            android:background="@drawable/basic_taekwon"/>
-        <ImageView
-            android:layout_width="380dp"
-            android:layout_height="123.8dp"
-            android:background="@drawable/blackblur_rectangle_fill" />
-
-        <Button
-            android:layout_width="18.3dp"
-            android:layout_height="18.3dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/set_bt" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20.3dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/gtlec_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nanumsquare_bold"
-                android:lineSpacingExtra="3.3sp"
-                android:textColor="#ffffff"
-                android:textSize="22.5sp"
-                tools:text="태권도 초급반" />
-
-            <TextView
-                android:id="@+id/gtlec_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/white_rectangle_empty"
-                android:fontFamily="@font/nanumsquare_bold"
-                android:lineSpacingExtra="1.3sp"
-                android:textColor="#ffffff"
-                android:textSize="13.3sp"
-                tools:text="화, 목 오후 8시" />
-
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
-                >
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shoes" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="1.3sp"
-                    android:layout_marginLeft="3dp"
-                    android:fontFamily="@font/nanumsquare_bold"
-                    android:textColor="#cacaca"
-                    android:textSize="11.8sp"
-                    android:text="짐지수 " />
-
-                <TextView
-                    android:id="@+id/gtlec_grade"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="1.3sp"
-                    android:layout_marginLeft="2dp"
-                    android:fontFamily="@font/nanumsquare_bold"
-                    android:textColor="#cacaca"
-                    android:textSize="11.8sp"
-                    android:text="3.5" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="86dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nanumsquare_bold"
-                    android:gravity="center_horizontal"
-                    android:lineSpacingExtra="1.3sp"
-                    android:textColor="#ffffff"
-                    android:textSize="8.8sp"
-                    android:text="수강생" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp">
-
-                    <TextView
-                        android:fontFamily="@font/nanumsquare_bold"
-                        android:id="@+id/gtlec_people"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:lineSpacingExtra="-20sp"
-                        android:textColor="#ffffff"
-                        android:textSize="22.5sp"
-                        android:text="5" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nanumsquare_bold"
-                        android:lineSpacingExtra="1.3sp"
-                        android:textColor="#ffffff"
-                        android:textSize="12.5sp"
-                        android:text="명" />
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <View
-                android:layout_width="2dp"
-                android:layout_height="30dp"
-                android:layout_margin="5dp"
-                android:background="#FFFFFF" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nanumsquare_bold"
-                    android:gravity="center_horizontal"
-                    android:lineSpacingExtra="1.3sp"
-                    android:textColor="#ffffff"
-                    android:textSize="8.8sp"
-                    android:text="대기자" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp">
-
-                    <TextView
-                        android:fontFamily="@font/nanumsquare_bold"
-                        android:id="@+id/gtlec_waiting"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:lineSpacingExtra="-20sp"
-                        android:textColor="#FFFFFF"
-                        android:textSize="22.5sp"
-                        android:text="2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nanumsquare_bold"
-                        android:lineSpacingExtra="1.3sp"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12.5sp"
-                        android:text="명" />
-
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-
-    </RelativeLayout>
-
+    android:layout_marginHorizontal="60dp"
+    android:layout_marginVertical="10dp"
+    android:elevation="5dp">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <RelativeLayout
-            android:layout_width="190dp"
-            android:layout_height="29.5dp"
-            android:id="@+id/btn_together">
-
-            <TextView
-                android:id="@+id/btn_end_collect"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/gtlec_background"
                 android:layout_width="match_parent"
-                android:layout_height="29.5dp"
-                android:background="@drawable/white_border_fill"
-                android:fontFamily="@font/nanumsquare_bold"
-                android:gravity="center"
-                android:lineSpacingExtra="1.3sp"
-                android:textColor="#000000"
-                android:textSize="13sp"
-                android:text="모집 마감" />
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/basic_taekwon"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ccffffff" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/setting_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/gtlec_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:text="태권도 초급반" />
+
+                <TextView
+                    android:id="@+id/gtlec_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_rectangle_empty"
+                    android:fontFamily="@font/nanumsquare_regular"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:lineSpacingExtra="1.3sp"
+                    android:textColor="#3D547B"
+                    android:textSize="13sp"
+                    android:text="화, 목 오후 8시" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="7dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수강생"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="8sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/gtlec_people"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:fontFamily="@font/nanumsquare_bold"
+                            android:textColor="#272727"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="명"
+                            android:fontFamily="@font/nanumsquare_bold"
+                            android:textColor="#272727"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorBlack"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_gravity="center_vertical"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대기자"
+                        android:fontFamily="@font/nanumsquare_regular"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="8sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/gtlec_waiting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:fontFamily="@font/nanumsquare_bold"
+                            android:textColor="#272727"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="명"
+                            android:fontFamily="@font/nanumsquare_bold"
+                            android:textColor="#272727"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="190dp"
-            android:layout_height="29.5dp"
-            android:id="@+id/btn_change_intro">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-            <TextView
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="29.5dp"
-                android:background="@drawable/white_border_fill"
-                android:fontFamily="@font/nanumsquare_bold"
-                android:gravity="center"
-                android:text="소개 수정"
-                android:textColor="#000000"
-                android:textSize="13sp" />
+                android:id="@+id/btn_together">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/btn_end_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="29.5dp"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/nanumsquare_regular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="1.3sp"
+                    android:textColor="#272727"
+                    android:textSize="13sp"
+                    android:text="모집 마감" />
+            </RelativeLayout>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="22dp"
+                android:background="#d0d0ce"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="29.5dp"
+                android:id="@+id/btn_change_intro">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29.5dp"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/nanumsquare_regular"
+                    android:gravity="center"
+                    android:text="소개 수정"
+                    android:textColor="#272727"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
     </LinearLayout>
-</LinearLayout>
+
+</androidx.cardview.widget.CardView>

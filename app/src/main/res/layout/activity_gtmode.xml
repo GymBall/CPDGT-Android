@@ -6,33 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/white_border_fill"
+    android:background="@color/colorWhite"
     tools:context=".ui.gtmode.GTModeActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_act_gtmode_top_bar"
-        android:layout_width="250dp"
+        android:layout_width="210dp"
         android:layout_height="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right"
         android:background="#ffffff"
         app:tabBackground="@null"
-        app:tabIndicatorColor="@color/colorAccent"
-        app:tabIndicatorFullWidth="false"
-        app:tabIndicatorHeight="3dp"
+        app:tabIndicator="@null"
         app:tabRippleColor="@color/transparent" />
-
     <View
-    android:id="@+id/divline"
-    android:layout_width="match_parent"
-    android:layout_height="0.2dp"
-    android:layout_marginTop="10dp"
-    android:background="#c2c2d4"/>
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#2c2c2c"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_act_gtmode_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:background="#FAFCFF"/>
 
 </LinearLayout>

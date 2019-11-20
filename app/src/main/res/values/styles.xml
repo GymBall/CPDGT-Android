@@ -14,4 +14,9 @@
         <item name="android:statusBarColor">@android:color/white</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <style name="HomeDetailTab" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name ="android:textColorPrimary">#2c77f1</item>
+        <item name = "android:textColorSecondary">#7c7c7c</item>
+    </style>
 </resources>
