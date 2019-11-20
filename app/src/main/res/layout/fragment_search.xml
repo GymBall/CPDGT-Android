@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.search.SearchFragment"
     android:orientation="vertical"
-    android:layout_marginHorizontal="20dp">
+    android:layout_marginHorizontal="20dp"
+    android:id="@+id/search_fragment">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -36,10 +37,13 @@
         android:layout_marginTop="29.3dp">
 
         <EditText
-            android:layout_width="314.5dp"
+            android:layout_width="match_parent"
             android:layout_height="28.3dp"
             android:layout_centerInParent="true"
             android:background="@drawable/shape_search"
+            android:layout_marginHorizontal="27dp"
+            android:paddingHorizontal="30dp"
+            android:inputType="text"
             android:id="@+id/search_view"/>
         <ImageView
             android:layout_width="wrap_content"
@@ -47,9 +51,9 @@
             android:src="@drawable/search"
             android:layout_alignLeft="@id/search_view"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="8.3dp"/>
+            android:layout_marginLeft="8.3dp"
+            android:id="@+id/search_icon"/>
     </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
