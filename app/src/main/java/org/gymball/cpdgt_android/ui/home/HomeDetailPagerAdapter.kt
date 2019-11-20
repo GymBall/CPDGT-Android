@@ -7,8 +7,6 @@ import org.gymball.cpdgt_android.ui.search.SearchFragment
 
 class HomeDetailPagerAdapter (fm : FragmentManager, val fragmentCount : Int): FragmentStatePagerAdapter(fm){
 
-    private val fragmentTitleList = mutableListOf("전체", "요가","발레", "태권도", "헬스", "댄스", "수영", "복싱", "기타")
-
     override fun getItem(position:Int): Fragment{
 
         when(position){
@@ -16,12 +14,14 @@ class HomeDetailPagerAdapter (fm : FragmentManager, val fragmentCount : Int): Fr
             1-> return HomeDetailWhole()
             2-> return HomeDetailWhole()
             3-> return HomeDetailWhole()
+            4-> return HomeDetailWhole()
+            5-> return HomeDetailWhole()
+            6-> return HomeDetailWhole()
+            7-> return HomeDetailWhole()
+            8-> return HomeDetailWhole()
             else -> return HomeDetailWhole()
         }
     }
 
-    override fun getPageTitle(position: Int):CharSequence?{
-        return fragmentTitleList[position]
-    }
     override fun getCount(): Int = fragmentCount
 }

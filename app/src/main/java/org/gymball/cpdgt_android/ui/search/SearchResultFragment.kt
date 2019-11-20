@@ -8,21 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_search_result.*
-
 import androidx.recyclerview.widget.DividerItemDecoration
-import android.R
+import org.gymball.cpdgt_android.R
 
-
-
-/**
- * A simple [Fragment] subclass.
- */
 class SearchResultFragment : Fragment() {
     lateinit var searchResultRecyclerViewAdapter: SearchResultRecyclerViewAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(org.gymball.cpdgt_android.R.layout.fragment_search_result, container, false)
+        return inflater.inflate(R.layout.fragment_search_result, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -33,18 +27,18 @@ class SearchResultFragment : Fragment() {
 
     private fun setRecyclerView(){
         var dataList: ArrayList<SearchResultData> = ArrayList()
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
-        dataList.add(SearchResultData(getResources().getDrawable(org.gymball.cpdgt_android.R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
+        dataList.add(SearchResultData(getResources().getDrawable(R.drawable.search_result_image)!!, "태권도 초급반", "이대훈 짐선생", "3.5", "화,목 오후 8시"))
 
 
         searchResultRecyclerViewAdapter = SearchResultRecyclerViewAdapter(activity!!, dataList)
