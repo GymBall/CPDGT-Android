@@ -9,11 +9,9 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.fragment_lecture.view.*
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.model.LectureListData
 import org.gymball.cpdgt_android.ui.lecturedetail.LectureDetailActivity
-import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivity
 
 class LectureRecyclerViewAdapter(val ctx:Context, var dataList: ArrayList<LectureListData>, var total: Int) : RecyclerView.Adapter<LectureRecyclerViewAdapter.Holder>() {
