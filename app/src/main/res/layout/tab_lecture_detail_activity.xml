@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_tab_lecture_detail_class">
+        <TextView
+            android:id="@+id/tv_tl_lecture_detail_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="12dp"
+            android:text="수업 소개"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:textColor="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_tab_lecture_detail_teacher">
+        <TextView
+            android:id="@+id/tv_tl_lecture_detail_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="짐선생 소개"
+            android:fontFamily="@font/nanumsquare_regular"
+            android:textColor="#5f5f5f"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+</LinearLayout>

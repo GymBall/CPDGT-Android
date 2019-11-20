@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.lecture.LectureFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.lecture.LectureFragment"
+    android:background="@color/colorWhite">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:layout_marginHorizontal="27dp">
+        <View
+            android:layout_width="80dp"
+            android:layout_height="8dp"
+            android:background="#d6eeff"
+            android:layout_alignBottom="@id/text">
+        </View>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 강의"
+            android:fontFamily="@font/nanumsquare_regular"
+            android:textColor="#151515"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/top"
+        android:layout_marginHorizontal="27dp">
+        <TextView
+            android:id="@+id/tv_frag_lecture_lec_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/nanumsquare_bold">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개의 강의가 있어요"
+            android:textSize="20sp"
+            android:textColor="#2c2c2c"
+            android:fontFamily="@font/nanumsquare_light">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_frag_lecture_write_comment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후기 작성하기"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nanumsquare_bold"
+            android:layout_centerInParent="true">
 
-</FrameLayout>
+        </TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위 강의에 만족하고 계신가요?"
+        android:textColor="#646464"
+        android:textSize="12sp"
+        android:fontFamily="@font/nanumsquare_light"
+        android:layout_above="@id/btn_frag_lecture_write_comment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+    </TextView>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top2">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_frag_lecture_lecture_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="40dp"
+            android:clipToPadding="false"
+            android:paddingRight="40dp">
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.core.widget.NestedScrollView>
+
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+        android:id="@+id/indicator_frag_lecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:spi_dotColor="@color/colorAccent"
+        app:spi_dotSelectedColor="@color/colorAccent"
+        app:spi_dotSelectedSize="12dp"
+        app:spi_dotSize="8dp"
+        app:spi_dotSpacing="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/sv_top"
+        />
+</RelativeLayout>
