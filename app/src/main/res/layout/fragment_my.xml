@@ -51,6 +51,7 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/tv_frag_my_nickname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -215,7 +216,6 @@
                 android:orientation="vertical"
                 android:weightSum="3">
                 <RelativeLayout
-                    android:id="@+id/loginInfo"
                     android:layout_width="376dp"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -229,13 +229,15 @@
                         android:textColor="#404040"
                         android:letterSpacing="-0.05"
                         android:fontFamily="@font/nanumsquare_regular"
-                        android:text="로그인 정보"
+                        android:text="로그아웃"
                         android:layout_centerVertical="true"/>
                     <ImageView
+                        android:id="@+id/logout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/arrow_point_to_right"
                         android:layout_alignParentRight="true"
+                        android:padding="10dp"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"/>
                 </RelativeLayout>
@@ -266,6 +268,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/arrow_point_to_right"
                         android:layout_alignParentRight="true"
+                        android:padding="10dp"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"/>
                 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
+import com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
 import kotlinx.android.synthetic.main.fragment_lecture.*
 import kotlinx.android.synthetic.main.fragment_lecture.view.*
 

@@ -50,22 +50,26 @@
             android:paddingLeft="12dp"
             android:textSize="15dp"
             android:singleLine="true"
-            android:layout_gravity="center"
             android:background="@drawable/idpassword"
             android:fontFamily="@font/nanumsquare_regular"
-            android:hint="아이디"/>
+            android:hint="아이디"
+            android:layout_gravity="center"/>
+
         <EditText
             android:id="@+id/et_act_login_pw"
             android:layout_width="270.8dp"
             android:layout_height="34.5dp"
-            android:paddingLeft="12dp"
-            android:textSize="15dp"
-            android:imeOptions="actionDone"
-            android:singleLine="true"
             android:layout_gravity="center"
             android:background="@drawable/idpassword"
             android:fontFamily="@font/nanumsquare_regular"
-            android:hint="비밀번호"/>
+            android:hint="비밀번호"
+            android:imeOptions="actionDone"
+            android:paddingLeft="12dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
         <ImageView
             android:id="@+id/loginButton"
             android:layout_width="wrap_content"
