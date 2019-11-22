@@ -1,7 +1,6 @@
 package org.gymball.cpdgt_android.ui.home
 
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,21 +8,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.PagerSnapHelper
-import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_home_detail.*
 import kotlinx.android.synthetic.main.fragment_home_main.*
 
 import org.gymball.cpdgt_android.R
+import org.gymball.cpdgt_android.model.HomeImageData
 import org.gymball.cpdgt_android.ui.MainActivity
 import org.gymball.cpdgt_android.ui.gtmode.GTModeActivity
-import org.jetbrains.anko.find
-import org.jetbrains.anko.support.v4.ctx
 import org.jetbrains.anko.support.v4.startActivity
 
 class HomeMainFragment : Fragment() {
 
-    lateinit var HomeRecyclerViewAdapter : HomeRecyclerViewAdapter
+    lateinit var homeRecyclerViewAdapter : HomeRecyclerViewAdapter
     var pos : Int = -1
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -43,13 +40,18 @@ class HomeMainFragment : Fragment() {
         dataList.add(HomeImageData(getResources().getDrawable(R.drawable.home_image2)!!))
         dataList.add(HomeImageData(getResources().getDrawable(R.drawable.home_image3)!!))
 
-        HomeRecyclerViewAdapter = HomeRecyclerViewAdapter(activity!!, dataList)
-        rv_home_image.adapter = HomeRecyclerViewAdapter
+        homeRecyclerViewAdapter = HomeRecyclerViewAdapter(activity!!, dataList)
+        rv_home_image.adapter = homeRecyclerViewAdapter
         rv_home_image.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
 
-        val snapHelper = PagerSnapHelper()
+
+        val snapHelper: LinearSnapHelper = LinearSnapHelper()
         snapHelper.attachToRecyclerView(rv_home_image)
         rv_home_image.addItemDecoration(LinePagerIndicatorDecoration())
+
+        //rv_home_image.adapter.getItemId(0)
+
+
     }
 
     private fun setOnClickListener(){

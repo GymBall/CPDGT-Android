@@ -9,12 +9,16 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import org.gymball.cpdgt_android.R
+import org.gymball.cpdgt_android.model.HomeDetailData
 import org.gymball.cpdgt_android.model.LectureAbsData
 import org.gymball.cpdgt_android.ui.lecturedetail.LectureDetailActivity
 import org.jetbrains.anko.startActivity
 
-class MyRecyclerViewAdapter (val ctx: Context, var dataList: ArrayList<LectureAbsData>, var total: Int) : RecyclerView.Adapter<MyRecyclerViewAdapter.Holder>(){
+class MyRecyclerViewAdapter (val ctx: Context, var dataList: ArrayList<HomeDetailData>, var total: Int) : RecyclerView.Adapter<MyRecyclerViewAdapter.Holder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyRecyclerViewAdapter.Holder {
         val view: View = LayoutInflater.from(ctx).inflate(R.layout.rv_item_my_recent, parent,false)
         return Holder(view)
@@ -24,14 +28,19 @@ class MyRecyclerViewAdapter (val ctx: Context, var dataList: ArrayList<LectureAb
 
     override fun onBindViewHolder(holder: MyRecyclerViewAdapter.Holder, position: Int) {
         holder.whole.setOnClickListener{
-            ctx.startActivity<LectureDetailActivity>()
+            ctx.startActivity<LectureDetailActivity>( "t_image" to dataList[position].teacherimage,
+                "c_name" to dataList[position].className, "c_time" to dataList[position].time,
+                "t_name" to dataList[position].gymTeacher, "summary" to dataList[position].summary,
+                "background" to dataList[position].classimage)
         }
-        holder.c_name.text = dataList[position].class_name
-        holder.c_time.text = dataList[position].class_time
+        holder.c_name.text = dataList[position].className
+        holder.c_time.text = dataList[position].time
+        var options: RequestOptions = RequestOptions().transform(CenterCrop(), RoundedCorners(20))
         Glide.with(ctx)
-            .load(dataList[position].teacher_img)
+            .load(dataList[position].teacherimage)
+            .apply(options)
             .into(holder.t_img)
-        holder.t_name.text = dataList[position].teacher_name
+        holder.t_name.text = dataList[position].className
     }
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView){

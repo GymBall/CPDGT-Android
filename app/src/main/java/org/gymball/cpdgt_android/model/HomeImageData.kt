@@ -1,4 +1,4 @@
-package org.gymball.cpdgt_android.ui.home
+package org.gymball.cpdgt_android.model
 
 import android.graphics.drawable.Drawable
 import android.media.Image

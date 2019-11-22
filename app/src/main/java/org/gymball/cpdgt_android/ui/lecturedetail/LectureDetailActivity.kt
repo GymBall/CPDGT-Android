@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
+import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
@@ -62,14 +63,32 @@ class LectureDetailActivity : AppCompatActivity() {
 
     private fun viewInit() {
         var options: RequestOptions = RequestOptions().transform(CenterCrop(), RoundedCorners(170))
-        var t_image = intent.getStringExtra("t_image")
-        var c_name = intent.getStringExtra("")
+        var t_image = intent.getIntExtra("t_image",-1)
+        var t_name = intent.getStringExtra("t_name")
+        var c_name = intent.getStringExtra("c_name")
+        var c_time = intent.getStringExtra("c_time")
+        var c_image = intent.getIntExtra("background",-1)
+        var summary = intent.getStringExtra("summary")
+        LectureDetailClassFragment.instance.summary = summary
+
         val teacher_image: ImageView = findViewById(R.id.iv_act_lecture_detail_teacher_image)
+        val class_name: TextView = findViewById(R.id.tv_act_lecture_detail_class_name)
+        val teacher_name: TextView = findViewById(R.id.tv_act_lecture_detail_teacher_name)
+        val class_time: TextView = findViewById(R.id.tv_act_lecture_detail_class_time)
+        val class_image: ImageView = findViewById(R.id.iv_act_lecture_detail_background)
+
+        Glide.with(this)
+            .load(c_image)
+            .into(class_image)
 
         Glide.with(this)
             .load(t_image)
             .apply(options)
             .into(teacher_image)
+
+        class_name.text = c_name
+        class_time.text = c_time
+        teacher_name.text = t_name
 
         vp_act_lecture_detail_pager.apply {
             adapter = LectureDetailTabFragmentStatePagerAdapter(supportFragmentManager, 2)

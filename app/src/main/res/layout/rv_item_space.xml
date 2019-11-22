@@ -64,15 +64,16 @@
                     android:textSize="15sp"
                     android:text="청파 요가원 " />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11.3dp"
                     android:layout_marginTop="4dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:scaleType="centerCrop"
                         android:background="@drawable/placeholder"
                         android:layout_gravity="center_vertical"/>
 
@@ -80,37 +81,37 @@
                         android:id="@+id/space_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="6.3sp"
                         android:fontFamily="@font/nanumsquare_light"
                         android:textColor="@color/colorBlack"
-                        android:layout_marginLeft="2dp"
-                        android:textSize="11.5sp"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="10.5sp"
                         android:text="서울특별시 용산구 청파로47길 45 " />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11.3dp"
                     android:layout_marginTop="4dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:scaleType="centerCrop"
                         android:background="@drawable/ticktock"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"/>
 
                     <TextView
                         android:id="@+id/space_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dp"
+                        android:layout_marginLeft="13dp"
                         android:fontFamily="@font/nanumsquare_light"
                         android:textSize="10.5sp"
                         android:textColor="@color/colorBlack"
-                        android:lineSpacingExtra="6.3sp"
                         android:text="주중 오후 8시 이후 사용가능 | 주말 전시간대 사용가능 " />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
