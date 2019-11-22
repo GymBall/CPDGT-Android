@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_home_detail.*
 import kotlinx.android.synthetic.main.tab_home_detail_frag.*
 import org.gymball.cpdgt_android.R
+import org.gymball.cpdgt_android.ui.home.homedetail.HomeDetailWholeFragment
 
 class HomeDetailFragment : Fragment() {
     var pos : Int = -1
@@ -35,8 +36,9 @@ class HomeDetailFragment : Fragment() {
 
     private fun configureTopNavigation(){
         vp_home_detail.adapter = HomeDetailPagerAdapter(childFragmentManager, 9)
-        vp_home_detail.offscreenPageLimit = 9
+        vp_home_detail.offscreenPageLimit = 2
         tl_home_detail_bar.setupWithViewPager(vp_home_detail)
+
         val tabLayout: View = this.layoutInflater.inflate(R.layout.tab_home_detail_frag,null)
         tl_home_detail_bar.getTabAt(0)!!.customView = tabLayout.findViewById(R.id.rl_tab_home_detail_frag_whole)
         tl_home_detail_bar.getTabAt(1)!!.customView = tabLayout.findViewById(R.id.rl_tab_home_detail_frag_yoga)
@@ -47,6 +49,10 @@ class HomeDetailFragment : Fragment() {
         tl_home_detail_bar.getTabAt(6)!!.customView = tabLayout.findViewById(R.id.rl_tab_home_detail_frag_swim)
         tl_home_detail_bar.getTabAt(7)!!.customView = tabLayout.findViewById(R.id.rl_tab_home_detail_frag_boxing)
         tl_home_detail_bar.getTabAt(8)!!.customView = tabLayout.findViewById(R.id.rl_tab_home_detail_frag_etc)
+        pos = instance.pos
+        tl_home_detail_bar.getTabAt(pos)!!.select()
+        selectedHomeDetailTab(pos)
+
         tl_home_detail_bar.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
             override fun onTabReselected(tab: TabLayout.Tab?) {
                 selectedHomeDetailTab(position = tab!!.position)
@@ -62,8 +68,6 @@ class HomeDetailFragment : Fragment() {
         })
 
 
-        pos = instance.pos
-        tl_home_detail_bar.getTabAt(pos)!!.select()
     }
 
     private fun selectedHomeDetailTab(position:Int) {
@@ -87,6 +91,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 1) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.colorPrimary))
@@ -107,6 +112,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 2) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -127,6 +133,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 3) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -147,6 +154,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 4) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -167,6 +175,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 5) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -187,6 +196,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 6) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -207,6 +217,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_bold.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 7) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))
@@ -227,6 +238,7 @@ class HomeDetailFragment : Fragment() {
             tv_tab_home_Detail_frag_swim.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
             tv_tab_home_Detail_frag_boxing.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_bold.ttf")
             tv_tab_home_Detail_frag_etc.typeface = Typeface.createFromAsset(activity!!.assets,"font/nanumsquare_regular.ttf")
+
         } else if(position == 8) {
             tv_tab_home_Detail_frag_whole.setTextColor(resources.getColor(R.color.homedetaildefault))
             tv_tab_home_Detail_frag_yoga.setTextColor(resources.getColor(R.color.homedetaildefault))

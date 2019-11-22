@@ -30,6 +30,8 @@
                 android:layout_height="28.3dp"
                 android:background="@drawable/shape_search"
                 android:id="@+id/search_view"
+                android:fontFamily="@font/nanumsquare_regular"
+                android:textColor="@color/colorBlack"
                 android:paddingLeft="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"

@@ -61,6 +61,7 @@
                 android:lineSpacingExtra="7.5sp"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:layout_marginTop="48dp"
                 tools:text="경력 인증을 위해 자격증 또는 \n경력 인증 가능 서류를 준비해주세요." />
 
@@ -76,7 +77,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="11.3sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:layout_marginTop="43.8dp"
                 android:textColor="#0d0d0d"
                 android:lineSpacingExtra="1.3sp"
@@ -84,7 +86,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="11.3sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:layout_marginTop="23.5dp"
                 android:textColor="#0d0d0d"
                 android:lineSpacingExtra="1.3sp"
@@ -92,7 +95,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="11.3sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:layout_marginTop="23.5dp"
                 android:textColor="#0d0d0d"
                 android:lineSpacingExtra="1.3sp"
@@ -100,7 +104,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="11.3sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nanumsquare_regular"
                 android:layout_marginTop="23.5dp"
                 android:textColor="#0d0d0d"
                 android:lineSpacingExtra="1.3sp"

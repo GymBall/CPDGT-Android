@@ -3,23 +3,23 @@ package org.gymball.cpdgt_android.ui.home
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import org.gymball.cpdgt_android.ui.search.SearchFragment
+import org.gymball.cpdgt_android.ui.home.homedetail.*
 
 class HomeDetailPagerAdapter (fm : FragmentManager, val fragmentCount : Int): FragmentStatePagerAdapter(fm){
 
     override fun getItem(position:Int): Fragment{
 
         when(position){
-            0-> return HomeDetailWhole()
-            1-> return HomeDetailWhole()
-            2-> return HomeDetailWhole()
-            3-> return HomeDetailWhole()
-            4-> return HomeDetailWhole()
-            5-> return HomeDetailWhole()
-            6-> return HomeDetailWhole()
-            7-> return HomeDetailWhole()
-            8-> return HomeDetailWhole()
-            else -> return HomeDetailWhole()
+            0-> return HomeDetailWholeFragment()
+            1-> return HomeDetailYogaFragment()
+            2-> return HomeDetailBalletFragment()
+            3-> return HomeDetailTaekwondoFragment()
+            4-> return HomeDetailHealthFragment()
+            5-> return HomeDetailDanceFragment()
+            6-> return HomeDetailSwimFragment()
+            7-> return HomeDetailBoxingFragment()
+            8-> return HomeDetailEtcFragment()
+            else -> return HomeDetailWholeFragment()
         }
     }
 

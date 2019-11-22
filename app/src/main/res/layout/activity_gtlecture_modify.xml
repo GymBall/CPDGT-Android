@@ -18,7 +18,7 @@
             android:textColor="#404040"
             android:textSize="15sp"
             android:layout_gravity="center"
-            android:fontFamily="@fot/nanumsquare_bold"
+            android:fontFamily="@font/nanumsquare_bold"
             android:text="소개 수정하기" />
         <View
             android:layout_width="match_parent"
