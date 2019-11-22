@@ -25,12 +25,11 @@
             android:textColor="@color/colorBlack"
             android:fontFamily="@font/nanumsquare_bold"/>
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="10dp">
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -41,17 +40,18 @@
 \n용인대학교 태권도 학과 졸업
 \n용인대학교 태권도시범단 주장  "/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
             android:fontFamily="@font/nanumsquare_regular"
             android:textColor="#404040"
             android:lineSpacingExtra="7sp"
             android:text="태권도 공인 5단
 \n체육 교원 자격증
 \n그 외 국내 및 해외 100여회 활동"/>
-    </LinearLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"

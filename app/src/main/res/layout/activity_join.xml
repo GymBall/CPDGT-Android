@@ -123,6 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="2"
+                android:layout_marginTop="3dp"
                 android:orientation="horizontal">
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -134,6 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:fontFamily="@font/nanumsquare_light"
                         android:text="여"/>
                 </RelativeLayout>
                 <RelativeLayout
@@ -146,7 +148,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="남"/>
+                        android:text="남"
+                        android:fontFamily="@font/nanumsquare_light"/>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -161,7 +164,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -178,6 +182,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="요가"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -190,6 +195,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="헬스"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -202,6 +208,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="발레"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -214,6 +221,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="수영"/>
                     </RelativeLayout>
                 </LinearLayout>
@@ -232,6 +240,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="댄스"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -244,6 +253,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="복싱"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -256,6 +266,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="태권도"/>
                     </RelativeLayout>
                     <RelativeLayout
@@ -268,6 +279,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
+                            android:fontFamily="@font/nanumsquare_light"
                             android:text="기타"/>
                     </RelativeLayout>
                 </LinearLayout>

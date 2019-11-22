@@ -136,6 +136,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:fontFamily="@font/nanumsquare_light"
                         android:text="여"/>
                 </RelativeLayout>
                 <RelativeLayout
@@ -148,6 +149,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:fontFamily="@font/nanumsquare_light"
                         android:text="남"/>
                 </RelativeLayout>
             </LinearLayout>
