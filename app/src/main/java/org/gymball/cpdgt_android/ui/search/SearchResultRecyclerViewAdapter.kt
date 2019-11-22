@@ -40,7 +40,7 @@ class SearchResultRecyclerViewAdapter (val ctx : Context, val dataList : ArrayLi
             .into(holder.teacherImage)
 
         holder.className.text = dataList[position].className
-        holder.gymTeacher.text = dataList[position].gymTeacher+" 짐선"
+        holder.gymTeacher.text = dataList[position].gymTeacher+" 짐선생"
         holder.gymIndex.text = dataList[position].gymIndex
         holder.time.text = dataList[position].time
         if(position==dataList.size-1) {

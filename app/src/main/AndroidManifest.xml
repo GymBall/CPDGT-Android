@@ -6,12 +6,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo_main"
+        android:label="청파동 짐선생"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ui.join.gsJoinActivity"></activity>
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.join.gsJoinActivity" />
         <activity android:name=".ui.join.gtJoinActivity" />
         <activity android:name=".ui.gtmode.gtlecture.GTLectureNewActivity" />
         <activity android:name=".ui.gtmode.gtlecture.GTLectureModify" />
@@ -19,19 +26,9 @@
         <activity android:name=".ui.lecturedetail.ChatActivity" />
         <activity android:name=".ui.lecturedetail.LectureDetailActivity" />
         <activity android:name=".ui.lecture.LectureCommentActivity" />
-        <activity android:name=".ui.login.LoginActivity" >
-
-        </activity>
-        <activity android:name=".ui.join.JoinActivity">
-
-        </activity>
-        <activity android:name=".ui.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ui.login.LoginActivity"></activity>
+        <activity android:name=".ui.join.JoinActivity"></activity>
+        <activity android:name=".ui.MainActivity"></activity>
     </application>
 
 </manifest>
