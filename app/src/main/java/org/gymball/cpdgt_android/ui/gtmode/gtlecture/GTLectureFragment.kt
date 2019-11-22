@@ -14,13 +14,7 @@ import org.jetbrains.anko.support.v4.startActivity
 class GTLectureFragment : Fragment(){
     lateinit var GTLecRvAdapter: GTLecRvAdapter
 
-    var datalist:ArrayList<GTLectureData> = arrayListOf(
-        GTLectureData("태권도 초급반", "화, 목 8시 30분", "3.5", "5", "2", R.drawable.basic_taekwon),
-        GTLectureData("태권도 중급반", "화, 목 8시 30분", "3.5", "6", "4", R.drawable.basic_taekwon),
-        GTLectureData("태권도 고급반", "화, 목 8시 30분", "3.5", "3", "1", R.drawable.basic_taekwon),
-        GTLectureData("태권도 대회준비반", "화, 목 8시 30분", "3.5", "2", "1", R.drawable.basic_taekwon),
-        GTLectureData("요가 초급반", "월, 수 오후 9시", "5", "10", "5", R.drawable.bliss_ad))
-
+    var datalist = ArrayList<GTLectureData>()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) : View?{
         return inflater.inflate(R.layout.fragment_gtlecture, container, false)
     }
@@ -43,6 +37,62 @@ class GTLectureFragment : Fragment(){
     }
 
     private fun setRecyclerView() {
+        datalist.add(
+            GTLectureData(
+                R.drawable.taekwondo_b1,
+                R.drawable.taekwondo_t4,
+                "태권도 중급반",
+                "임은지",
+                "4.5",
+                "월, 수, 금 오후 7시",
+                "\"어려운 태권도? 한혜리 짐선생과 함께라면 더 이상 어렵지 않습니다!\"","4","2"
+            )
+        )
+        datalist.add(
+            GTLectureData(
+                R.drawable.taekwondo_b2,
+                R.drawable.taekwondo_t4,
+                "태권도 고급반",
+                "임은지",
+                "4.5",
+                "화, 목 오후 4시",
+                "\"화려한 수상 경력! 임은지 짐선생의 1:1 고급 태권도 코칭\"","1","2"
+            )
+        )
+        datalist.add(
+            GTLectureData(
+                R.drawable.taekwondo_b3,
+                R.drawable.taekwondo_t4,
+                "태권도 대회준비반",
+                "임은지",
+                "4.5",
+                "수, 금 오후 2시",
+                "\"10년 경력의 짐선생이 세심한 코칭으로 태권도 대회까지 책임집니다^^\"","5","2"
+            )
+        )
+
+        datalist.add(
+            GTLectureData(
+                R.drawable.taekwondo_b4,
+                R.drawable.taekwondo_t4,
+                "태권도 기초반",
+                "임은지",
+                "4.5",
+                "수, 금 오후 7시",
+                "\"즐겁고 건강하게 태권도를 배우고 싶은 사람! 모두 여기 모여라!\"","5","1"
+            )
+        )
+        datalist.add(
+            GTLectureData(
+                R.drawable.taekwondo_b5,
+                R.drawable.taekwondo_t4,
+                "태권도 초급반",
+                "임은지",
+                "4.5",
+                "화, 목 오후 8시",
+                "\"눈높이 교육으로 배워가는 태권도! 이 수업과 함께라면 당신도 태권도 고수!\"","7","1"
+            )
+        )
         GTLecRvAdapter = GTLecRvAdapter(activity!!, datalist, datalist.size)
         recycler_view.adapter = GTLecRvAdapter
         recycler_view.layoutManager = LinearLayoutManager(activity!!, LinearLayoutManager.VERTICAL, false)

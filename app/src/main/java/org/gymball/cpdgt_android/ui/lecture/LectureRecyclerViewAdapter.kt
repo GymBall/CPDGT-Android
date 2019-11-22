@@ -9,6 +9,9 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.model.LectureListData
 import org.gymball.cpdgt_android.ui.lecturedetail.LectureDetailActivity
@@ -24,8 +27,13 @@ class LectureRecyclerViewAdapter(val ctx:Context, var dataList: ArrayList<Lectur
 
     override fun onBindViewHolder(holder: LectureRecyclerViewAdapter.Holder, position: Int) {
         holder.whole.setOnClickListener {
-            ctx.startActivity<LectureDetailActivity>()
+            ctx.startActivity<LectureDetailActivity>( "t_image" to dataList[position].teacher_img,
+                "c_name" to dataList[position].class_name, "c_time" to dataList[position].class_time,
+                "t_name" to dataList[position].teacher_name, "summary" to dataList[position].summary,
+                "background" to dataList[position].background)
         }
+
+        var options: RequestOptions = RequestOptions().transform(CenterCrop(), RoundedCorners(170))
         Glide.with(ctx)
             .load(dataList[position].background)
             .into(holder.back)
@@ -33,10 +41,11 @@ class LectureRecyclerViewAdapter(val ctx:Context, var dataList: ArrayList<Lectur
         holder.c_time.text = dataList[position].class_time
         Glide.with(ctx)
             .load(dataList[position].teacher_img)
+            .apply(options)
             .into(holder.t_img)
         holder.t_name.text = dataList[position].teacher_name
-        holder.ment1.text = dataList[position].ment1
-        holder.ment2.text = dataList[position].ment2
+        holder.ment1.text = "_"+dataList[position].ment1+"부터 수강 시작"
+        holder.ment2.text = "_"+dataList[position].ment2+"일째 Gym 중"
     }
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {

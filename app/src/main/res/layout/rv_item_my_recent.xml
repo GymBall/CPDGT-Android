@@ -19,6 +19,7 @@
                 android:id="@+id/iv_rv_item_frag_my_teacher_image"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:scaleType="centerCrop"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="11dp"
                 android:src="@drawable/recentgt" />

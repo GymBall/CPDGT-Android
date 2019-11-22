@@ -19,9 +19,43 @@ class LectureFragment : Fragment() {
 
     lateinit var lectureRecyclerViewAdapter: LectureRecyclerViewAdapter
     var dataList: ArrayList<LectureListData> = arrayListOf(
-        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뫄뫄", "_언제부터 수강 시작", "_몇일째 Gym "),
-        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"묘묘","_언제부터 수강 시작", "_몇일째 Gym "),
-        LectureListData(R.drawable.lecture_detail_backgroud1,"클래스 이름", "클래스 시간대", R.drawable.lecture_comment_teacher,"뮤뮤","_언제부터 수강 시작", "_몇일째 Gym "))
+        LectureListData(
+            R.drawable.boxing_b3,
+            R.drawable.boxing_t3,
+            "복싱 1대1",
+            "김지아",
+            "2.5",
+            "주 5회 시간 자유",
+            "\"1대1, 주 5회로 전문적으로 가까이서 알려드립니다.\"","8월 24일", "23"
+        ),
+        LectureListData(
+            R.drawable.dance_b4,
+            R.drawable.dance_t4,
+            "폴댄스 개인특강",
+            "신아람",
+            "3.7",
+            "화, 수 오후 12시",
+            "\"폴댄스 1:1 특강입니다. 모든 기구 구비되어 있습니다!\"","4월 12일","142"
+        ),
+        LectureListData(
+            R.drawable.swim_b3,
+            R.drawable.swim_t3,
+            "수영 중급반",
+            "김상우",
+            "4.5",
+            "월, 수, 금 오후 8시",
+            "\"김상우 짐선생과 함께 물길을 헤쳐나가봅시다! 믿고 맡겨주세요 :)\"","6월 1일","183"
+        ),
+        LectureListData(
+            R.drawable.taekwondo_b3,
+            R.drawable.taekwondo_t3,
+            "태권도 중급반",
+            "한혜리",
+            "4.3",
+            "월, 수, 금 오후 7시",
+            "\"어려운 태권도? 한혜리 짐선생과 함께라면 더 이상 어렵지 않습니다!\"","10월 2일","21"
+        )
+    )
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_lecture, container, false)

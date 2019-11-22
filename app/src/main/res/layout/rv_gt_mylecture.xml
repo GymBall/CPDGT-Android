@@ -9,6 +9,7 @@
     android:paddingVertical="10dp"
     android:clipToPadding="false">
     <androidx.cardview.widget.CardView
+        android:id="@+id/whole"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="10dp"

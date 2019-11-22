@@ -123,6 +123,7 @@
                 android:layout_margin="4dp"
                 android:text="#주짓수"/>
             <TextView
+                android:id="@+id/btn_frag_search_main_swim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_keyword"

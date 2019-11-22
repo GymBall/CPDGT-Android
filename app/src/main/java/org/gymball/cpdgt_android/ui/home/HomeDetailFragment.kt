@@ -25,8 +25,6 @@ class HomeDetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_detail, container, false)
-
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -36,7 +34,7 @@ class HomeDetailFragment : Fragment() {
 
     private fun configureTopNavigation(){
         vp_home_detail.adapter = HomeDetailPagerAdapter(childFragmentManager, 9)
-        vp_home_detail.offscreenPageLimit = 2
+        vp_home_detail.offscreenPageLimit = 9
         tl_home_detail_bar.setupWithViewPager(vp_home_detail)
 
         val tabLayout: View = this.layoutInflater.inflate(R.layout.tab_home_detail_frag,null)

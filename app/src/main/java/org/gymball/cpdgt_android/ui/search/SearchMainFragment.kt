@@ -44,7 +44,14 @@ class SearchMainFragment : Fragment() {
             transaction.addToBackStack(null)
             transaction.commit()
             SearchResultFragment.instance.search_object = "태권도"
+        }
 
+        btn_frag_search_main_swim.setOnClickListener {
+            val transaction: FragmentTransaction = (context as MainActivity).supportFragmentManager.beginTransaction()
+            transaction.add(R.id.fl_frag_search, SearchResultFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+            SearchResultFragment.instance.search_object = "수영"
         }
     }
 }

@@ -1,13 +1,13 @@
 package org.gymball.cpdgt_android.ui.home
 
 import android.content.Context
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import org.gymball.cpdgt_android.R
+import org.gymball.cpdgt_android.model.HomeImageData
 import org.jetbrains.anko.image
 
 class HomeRecyclerViewAdapter (val ctx : Context, val dataList : ArrayList<HomeImageData>) : RecyclerView.Adapter<HomeRecyclerViewAdapter.Holder>(){

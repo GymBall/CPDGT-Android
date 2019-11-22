@@ -96,7 +96,7 @@
             android:orientation="horizontal"
             android:descendantFocusability="blocksDescendants"
             android:layout_marginTop="60dp"
-            android:paddingLeft="40dp"
+            android:paddingLeft="35dp"
             android:clipToPadding="false"
             android:paddingRight="40dp">
         </androidx.recyclerview.widget.RecyclerView>

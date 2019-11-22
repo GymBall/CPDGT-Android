@@ -13,8 +13,8 @@ import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import org.gymball.cpdgt_android.R
+import org.gymball.cpdgt_android.model.HomeDetailData
 import org.gymball.cpdgt_android.ui.lecturedetail.LectureDetailActivity
-import org.jetbrains.anko.image
 import org.jetbrains.anko.startActivity
 
 class HomeDetailRecyclerViewAdapter (val ctx : Context, val dataList : ArrayList<HomeDetailData>) : RecyclerView.Adapter<HomeDetailRecyclerViewAdapter.Holder>(){
@@ -43,7 +43,10 @@ class HomeDetailRecyclerViewAdapter (val ctx : Context, val dataList : ArrayList
             holder.line.visibility = View.INVISIBLE
         }
         holder.whole.setOnClickListener {
-            ctx.startActivity<LectureDetailActivity>( "t_image" to dataList[position].teacherimage)
+            ctx.startActivity<LectureDetailActivity>( "t_image" to dataList[position].teacherimage,
+                "c_name" to dataList[position].className, "c_time" to dataList[position].time,
+                "t_name" to dataList[position].gymTeacher, "summary" to dataList[position].summary,
+                "background" to dataList[position].classimage)
         }
 
     }

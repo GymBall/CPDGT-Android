@@ -30,6 +30,11 @@
                 android:layout_height="28.3dp"
                 android:background="@drawable/shape_search"
                 android:id="@+id/search_view"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:imeActionLabel="검색"
+                android:maxLines="1"
+                android:lines="1"
                 android:fontFamily="@font/nanumsquare_regular"
                 android:textColor="@color/colorBlack"
                 android:paddingLeft="5dp"/>
