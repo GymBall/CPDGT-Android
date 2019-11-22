@@ -8,6 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_lecture_detail.*
 import kotlinx.android.synthetic.main.tab_lecture_detail_activity.*
@@ -56,6 +61,16 @@ class LectureDetailActivity : AppCompatActivity() {
     }
 
     private fun viewInit() {
+        var options: RequestOptions = RequestOptions().transform(CenterCrop(), RoundedCorners(170))
+        var t_image = intent.getStringExtra("t_image")
+        var c_name = intent.getStringExtra("")
+        val teacher_image: ImageView = findViewById(R.id.iv_act_lecture_detail_teacher_image)
+
+        Glide.with(this)
+            .load(t_image)
+            .apply(options)
+            .into(teacher_image)
+
         vp_act_lecture_detail_pager.apply {
             adapter = LectureDetailTabFragmentStatePagerAdapter(supportFragmentManager, 2)
             offscreenPageLimit = 2
