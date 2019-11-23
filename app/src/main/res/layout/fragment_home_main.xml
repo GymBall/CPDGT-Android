@@ -29,48 +29,96 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/gt_mode" />
     </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="40dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:textColor="#2c2c2c"
-            android:fontFamily="@font/nanumsquare_light"
-            android:text="지금 청파동은"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/ll_frag_home_main_ment1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="184"
-                android:textSize="22sp"
-                android:textColor="#2c77f1"
-                android:fontFamily="@font/nanumsquare_bold"
-                android:id="@+id/st_num"/>
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="22sp"
                 android:textColor="#2c2c2c"
                 android:fontFamily="@font/nanumsquare_light"
-                android:text="명의 짐학생들이"/>
+                android:text="지금 청파동은"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="184"
+                    android:textSize="22sp"
+                    android:textColor="#2c77f1"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:id="@+id/st_num"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#2c2c2c"
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text="명의 짐학생들이"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#2c2c2c"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nanumsquare_light"
+                android:text="열심히 운동 중!"/>
         </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_frag_home_main_ment2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:textColor="#2c2c2c"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/nanumsquare_light"
-            android:text="열심히 운동 중!"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#2c2c2c"
+                android:fontFamily="@font/nanumsquare_light"
+                android:text="지금 청파동은"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:textSize="22sp"
+                    android:textColor="#2c77f1"
+                    android:fontFamily="@font/nanumsquare_bold"
+                    android:id="@+id/tv_frag_home_main_gt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#2c2c2c"
+                    android:fontFamily="@font/nanumsquare_light"
+                    android:text="명의 짐선생들이"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#2c2c2c"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nanumsquare_light"
+                android:text="열심히 코치 중!"/>
+        </LinearLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -80,14 +128,13 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home_image"
-            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal"
             android:paddingLeft="50dp"
             android:paddingRight="100dp"
             android:clipToPadding="false"
-            android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
+            android:layout_centerVertical="true" />
     </RelativeLayout>
 
     <RelativeLayout

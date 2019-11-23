@@ -100,7 +100,7 @@ class HomeDetailSwimFragment : Fragment() {
                 "김하랑",
                 "4.4",
                 "월, 수, 금 오전 5시",
-                "\"Funny한 수영, Funny한 선생님! 이 한 줄이면 충분하지 않나요? 망설이지마세요\""
+                "\"Funny한 수영, Funny한 선생님! 이 한 줄이면 충분하지 않나요? 망설이지 마세요\""
             )
         )
         dataList2.add(

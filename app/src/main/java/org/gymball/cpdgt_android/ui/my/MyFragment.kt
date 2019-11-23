@@ -1,6 +1,7 @@
 package org.gymball.cpdgt_android.ui.my
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +13,11 @@ import kotlinx.android.synthetic.main.fragment_my.*
 import org.gymball.cpdgt_android.R
 import org.gymball.cpdgt_android.model.HomeDetailData
 import org.gymball.cpdgt_android.model.LectureAbsData
+import org.gymball.cpdgt_android.ui.MainActivity
 import org.gymball.cpdgt_android.ui.login.LoginActivity
+import org.gymball.cpdgt_android.util.User
+import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.support.v4.ctx
 import org.jetbrains.anko.support.v4.startActivity
 
 class MyFragment : Fragment() {
@@ -83,6 +88,13 @@ class MyFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setRecyclerView()
+        tv_frag_my_nickname.text = User.nickname+" 님"
+        logout.setOnClickListener {
+            User.flag = -1
+            User.nickname = null
+            startActivity<LoginActivity>()
+            MainActivity.MainClass.act?.finish()
+        }
     }
 
     private fun setRecyclerView() {
